@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linear_layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/loginProgbar"
+            android:layout_width="@dimen/hdpi_progressBar_height"
+            android:layout_height="@dimen/hdpi_progressBar_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@dimen/weight_header" >
+
+                <RelativeLayout
+                    android:id="@+id/l"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <ImageButton
+                        android:id="@+id/img_Loginbck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/pfsingup_backBtn_leftMargin"
+                        android:background="#00000000"
+                        android:src="@drawable/backbtn" />
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Profile Photo"
+                        android:textColor="@color/layout_top_heading_color"
+                        android:textSize="@dimen/All_screen_header_text_size"
+                        android:textStyle="bold" />
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:id="@+id/profileEditTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/pfsingup_backBtn_leftMargin"
+                        android:text="Editar"
+                        android:textColor="@color/layout_top_heading_color"
+                        android:textSize="@dimen/All_screen_header_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvv"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#b2b2b2" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.89" 
+                android:background="#ffffff">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+               >
+
+                    <RelativeLayout
+                        android:layout_width="320dp"
+                        android:layout_height="320dp"
+                        android:layout_centerInParent="true"
+                        >
+                        
+                        <ProgressBar 
+                            android:layout_height="25dp"
+                            android:layout_width="25dp"
+                            android:id="@+id/editPicProgress"
+                            android:visibility="gone"
+                            android:layout_centerInParent="true"/>
+                        
+                        <ImageView 
+                            android:id="@+id/userProfilePic"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/user"/>
+                    </RelativeLayout>
+
+                    
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

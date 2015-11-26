@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/GrayHot" >
+
+<!--       android:background="@layout/gallary_selector" -->
+    <RelativeLayout
+        android:id="@+id/galleryAllContent"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" 
+      >
+
+        <RelativeLayout
+            android:id="@+id/galleryHeader"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+         >
+<!--             android:background="#33a488"  -->
+
+            <TextView
+                android:id="@+id/tickettype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Mesa"
+                        android:paddingLeft="4dp"
+                android:textColor="@color/White"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/ticketDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+         
+                android:textColor="@color/White"
+                android:paddingRight="4dp"
+                android:textSize="15sp" />
+            
+            <TextView 
+                android:layout_height="0.1dp"
+                android:layout_width="match_parent"
+                android:background="#F0F0F0"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/galleryContentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+     
+            android:layout_below="@+id/galleryHeader">  
+<!--                       android:background="#42b49a"  -->
+
+            <RelativeLayout
+                android:id="@+id/galleryContent"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" 
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/ticketCostTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Preço"
+                            android:paddingLeft="4dp"
+                    android:textColor="@color/White"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ticketCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+             
+                    android:paddingRight="4dp"
+                    android:textColor="@color/White"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ticketPriceLyout"
+                android:layout_below="@+id/galleryContent"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:id="@+id/totalSeatsTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Lugares"
+                            android:paddingLeft="4dp"
+                    android:textColor="@color/White"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/totalSeats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="4dp"
+                    android:layout_centerVertical="true"
+             
+                    android:textColor="@color/White"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/ticketConsumptionLyout"
+                android:layout_below="@+id/ticketPriceLyout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" >
+
+                <TextView
+                    android:id="@+id/ticketConsumptionTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Consumação"
+                            android:paddingLeft="4dp"
+                    android:textColor="@color/White"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/ticketConsumption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="4dp"
+             
+                    android:textColor="@color/White"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

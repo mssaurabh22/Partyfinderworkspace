@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/profile_header"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/weight_header"
+            android:background="@color/White"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/backButton_layout"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" >
+<!--                     <RelativeLayout -->
+<!--                     android:id="@+id/backButton_layout" -->
+<!--                     android:layout_width="80dp" -->
+<!--                     android:layout_height="match_parent" -->
+<!--                     android:layout_alignParentLeft="true" > -->
+
+                <ImageButton
+                        android:id="@+id/profile_backBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/header_images_margin"
+                        android:background="@drawable/backbtn" />
+<!--                 </RelativeLayout> -->
+
+                   
+                </RelativeLayout>
+
+                <com.partyfinder.CustomView.CustomFontSemiBold
+                    android:id="@+id/upcomingeventheading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/profile"
+                    android:textColor="@color/layout_top_heading_color"
+                    android:textSize="@dimen/All_screen_header_text_size"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/settingButton_layout"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical" >
+
+                    <ImageButton
+                        android:id="@+id/profile_SettingIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/header_images_margin"
+                        android:background="#00000000"
+                        android:src="@drawable/settings" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/divider_profile"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccec3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.45"
+            android:background="@color/White"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.57"
+                android:background="@color/White"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.20"
+                    android:orientation="vertical"
+                    android:background="@color/White"
+                    android:gravity="center" >
+
+                    <RelativeLayout
+                        android:id="@+id/img_userProfilelayout"
+                        android:layout_width="@dimen/profile_userimage_layout_height_width"
+                        android:layout_height="@dimen/profile_userimage_layout_height_width"
+                        android:layout_gravity="center"
+                        android:background="@drawable/imagebg"
+                        android:padding="5dp"
+                       >
+                        
+                         <com.partyfinder.CustomView.ImageViewRounded
+                            android:id="@+id/profile_userimage2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY" />
+
+                        <com.partyfinder.CustomView.ImageViewRounded
+                            android:id="@+id/profile_userimage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY" />
+                        
+                      
+                    </RelativeLayout>
+                      <com.partyfinder.CustomView.CustomFontRegular 
+                            android:id="@+id/EditProfilePicTxt"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Editar"
+                            android:textSize="@dimen/profile_bottom_layout_text_size"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/profile_userimage"
+                                 android:textColor="#42b49a"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.80"
+                    android:gravity="center_vertical" >
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:id="@+id/profile_userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/img_userProfilelayout"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/profile_username_layout_left"
+                        android:layout_toRightOf="@+id/img_userProfilelayout"
+                        android:text="Saurabh Bhandari"
+                        android:textColor="#42b49a"
+                        android:textSize="@dimen/profile_username_text_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.43"
+                android:background="@color/Black"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.18"
+                    android:background="@color/White" >
+
+                    <RelativeLayout
+                        android:id="@+id/plus_btn_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <ImageView
+                            android:id="@+id/profile_sendplus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/redplus" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.32"
+                    android:background="#FAFAFA" >
+
+                    <RelativeLayout
+                        android:id="@+id/profile_location_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FAFAFA" >
+
+                        <com.partyfinder.CustomView.CustomFontRegular
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:background="#cccec3" />
+
+                        <com.partyfinder.CustomView.CustomFontRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentTop="true"
+                            android:background="#cccec3" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true" >
+
+                            <com.partyfinder.CustomView.CustomFontSemiBold
+                                android:id="@+id/locationtextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/profile_location_label_left"
+                                android:text="@string/location"
+                                android:textColor="#42b49a"
+                                android:textSize="@dimen/profile_userinfo_text_label_size" />
+                            <!-- android:layout_marginTop="@dimen/profile_userinfo_label_text_top" -->
+
+                            <com.partyfinder.CustomView.CustomFontRegular
+                                android:id="@+id/userLoacation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/locationtextView"
+                                android:layout_marginLeft="@dimen/profile_location_label_left"
+                                android:layout_marginTop="@dimen/profile_userifo_text_top"
+                                android:singleLine="true"
+                                android:textColor="#4d4d4d"
+                                android:textSize="@dimen/profile_userinfo_text_label_size" />
+                            <!--  -->
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.20"
+                    android:background="#FAFAFA" >
+
+                    <RelativeLayout
+                        android:id="@+id/profile_age_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FAFAFA"
+                        android:gravity="center_horizontal" >
+
+                        <com.partyfinder.CustomView.CustomFontRegular
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:background="#cccec3" />
+
+                        <com.partyfinder.CustomView.CustomFontRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentTop="true"
+                            android:background="#cccec3" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true" >
+
+                            <com.partyfinder.CustomView.CustomFontSemiBold
+                                android:id="@+id/AgeTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/Age"
+                                android:textColor="#42b49a"
+                                android:textSize="@dimen/profile_userinfo_text_label_size" />
+
+                            <com.partyfinder.CustomView.CustomFontRegular
+                                android:id="@+id/userAge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/AgeTextView"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/profile_userifo_text_top"
+                                android:text=""
+                                android:textColor="#4d4d4d"
+                                android:textSize="@dimen/profile_userinfo_text_label_size" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.20"
+                    android:background="#FAFAFA" >
+
+                    <RelativeLayout
+                        android:id="@+id/profile_friend_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FAFAFA"
+                        android:gravity="center_horizontal" >
+
+                        <com.partyfinder.CustomView.CustomFontRegular
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:background="#cccec3" />
+
+                        <com.partyfinder.CustomView.CustomFontRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentTop="true"
+                            android:background="#cccec3" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true" >
+
+                            <com.partyfinder.CustomView.CustomFontSemiBold
+                                android:id="@+id/FriendsTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/Friends"
+                                android:textColor="#42b49a"
+                                android:textSize="@dimen/profile_userinfo_text_label_size" />
+
+                            <com.partyfinder.CustomView.CustomFontRegular
+                                android:id="@+id/userFrnds"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/FriendsTextView"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/profile_userifo_text_top"
+                                android:text=""
+                                android:textColor="#4d4d4d"
+                                android:textSize="@dimen/profile_userinfo_text_label_size" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.44"
+            android:background="@color/GreenPartyFinderGreen" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/profile_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_userinfo"
+                    android:background="#000000" >
+
+                    <ProgressBar
+                        android:id="@+id/progressBar1"
+                        android:layout_width="@dimen/hdpi_progressBar_height"
+                        android:layout_height="@dimen/hdpi_progressBar_height"
+                        android:layout_centerInParent="true"
+                        android:indeterminate="true"
+                        android:visibility="gone" />
+
+                    <ListView
+                        android:id="@+id/userFeedsList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#232323"
+                        android:divider="@drawable/myprofiledivider"
+                        android:fadeScrollbars="false"
+                        android:fadingEdge="none"
+                        android:listSelector="#00000000"
+                        android:overScrollMode="never"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:scrollbars="none"
+                        tools:listitem="@layout/myprofile_listview_layout" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/profile_bottom_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_bottom_layout_height"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/favorites_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="#e74f64"
+                        android:orientation="vertical" >
+
+                        <com.partyfinder.CustomView.CustomFontRegular
+                            android:id="@+id/btn_myfriend_favourite"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/Favourites"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/profile_bottom_layout_text_size" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/virtical_divider"
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="#ce4457" />
+
+                    <LinearLayout
+                        android:id="@+id/friends_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="#e74f64"
+                        android:orientation="vertical" >
+
+                        <com.partyfinder.CustomView.CustomFontRegular
+                            android:id="@+id/btn_myfriend_friends"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/Friends"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/profile_bottom_layout_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

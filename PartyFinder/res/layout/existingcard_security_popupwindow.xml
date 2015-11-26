@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/popupmain_layout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_squareimage" >
+
+        <TextView
+            android:id="@+id/popup_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/card_security_msg"
+            android:textColor="#626262"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/securityEd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popup_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/rectangle_redbourder"
+            android:gravity="center_vertical"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            android:padding="5dp"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/popup_window_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/securityEd"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/listview_deviderred" />
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/popup_window_divider"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="OK"
+            android:textColor="#0040FF" />
+    </RelativeLayout>
+
+</LinearLayout>

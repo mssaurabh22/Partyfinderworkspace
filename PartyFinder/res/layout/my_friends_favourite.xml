@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+      <FrameLayout 
+        android:id="@+id/frameContainer"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_width="match_parent">
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/weight_header" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff" >
+
+                <ImageButton
+                    android:id="@+id/rel_btn_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="23px"
+                    android:background="#00000000"
+                    android:src="@drawable/backbtn" />
+
+                <com.partyfinder.CustomView.CustomFontSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/Favourites"
+                    android:textColor="@color/layout_top_heading_color"
+                    android:textSize="@dimen/All_screen_header_text_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="23px"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/searchicon"
+                    android:visibility="gone" />
+                
+                    <TextView
+        android:id="@+id/tvv"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+android:layout_alignParentBottom="true"
+        android:background="#b2b2b2" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.89" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ListView
+                    android:id="@+id/listvIew_accept_friends_req"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:divider="@drawable/eventsdivider"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    tools:listitem="@layout/cstm_listview_for_vanues" >
+                </ListView>
+
+                <TextView
+                    android:id="@+id/dkjfs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/listvIew_accept_friends_req"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#9E9E9E"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/proBar_loadfriends"
+                    android:layout_width="@dimen/hdpi_progressBar_height"
+                    android:layout_height="@dimen/hdpi_progressBar_height"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone" />
+
+                <ListView
+                    android:id="@+id/listvIew_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dkjfs"
+                    android:layout_marginTop="5dp"
+                    android:divider="@drawable/listview_devider"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    tools:listitem="@layout/circle_image_item_forall_layout" >
+                </ListView>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+       
+    </FrameLayout>
+    
+</RelativeLayout>

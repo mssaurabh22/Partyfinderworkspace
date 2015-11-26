@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ConfirmTicketLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/weight_header" >
+
+            <RelativeLayout
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/orderTicketbackButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/order_history_header_image_leftmargin"
+                    android:background="@drawable/backbtn"
+                    android:visibility="gone" />
+
+                <com.partyfinder.CustomView.CustomFontSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/order_confirm"
+                    android:textColor="@color/layout_top_heading_color"
+                    android:textSize="@dimen/All_screen_header_text_size"
+                    android:textStyle="bold" />
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/heder_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/order_history_divider_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/orderHistorydividercolor" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.43"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.11"
+                android:gravity="center" >
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/ticketOrderCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order #0000324"
+                    android:textColor="@color/GreenPartyFinderGreen"
+                    android:textSize="@dimen/orderTicketConfirmation_order_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.57"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+                
+
+
+    <Gallery
+        android:id="@+id/QrCodeGallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:background="#ffffff" />
+
+
+
+    <LinearLayout
+        android:id="@+id/DottedImageCount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+              <!--   <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.30" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.40" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center" >
+
+          
+                        <ImageView
+                            android:id="@+id/newticketconfirmationQrcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/newqrcode" />
+
+                        <ImageView
+                            android:id="@+id/ticketconfirmationQrcode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/userimage" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.30" >
+                </LinearLayout> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.10"
+                android:gravity="center" >
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/ticketUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ticketconfirmationQrcode"
+                    android:gravity="center"
+                    android:text="Carlos Alberto Souza Barros"
+                    android:textColor="@color/GreenPartyFinderGreen"
+                    android:textSize="@dimen/orderTicketConfirmation_Username_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.07"
+                android:gravity="center" >
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/UserCpf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ticketUserName"
+                    android:layout_gravity="center"
+                    android:text="ID # U00097 "
+                    android:textColor="@color/orsummarybelow_edittext_text_colour"
+                    android:textSize="@dimen/orderTicketConfirmation_address_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.07"
+                android:gravity="center" >
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/UserAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="AV albert Enstein 1038"
+                    android:textColor="@color/orsummarybelow_edittext_text_colour"
+                    android:textSize="@dimen/orderTicketConfirmation_address_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.07"
+                android:gravity="center" >
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/cityState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="sddsddsdcds"
+                    android:textColor="@color/orsummarybelow_edittext_text_colour"
+                    android:textSize="@dimen/orderTicketConfirmation_address_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07" >
+
+            <LinearLayout
+                android:id="@+id/edit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/head2"
+                android:background="@color/GrayHot"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/orsummarybelow_edittext_leftpadding"
+                    android:text="@string/your_order"
+                    android:textColor="@color/orsummarybelow_edittext_text_colour"
+                    android:textSize="@dimen/orsummarybelow_edittext_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.28"
+            android:background="#000000" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/orderTicketConfirmation_ticketDetail_padding" >
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/ticketAndTable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Event Name"
+                    android:textColor="@color/RedpartyFinderRed"
+                    android:textSize="@dimen/orderTicketConfirmation_ticketOrderCode_detailtextSize" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ticketAndTable"
+                    android:layout_marginTop="@dimen/orderTicketConfirmation_ticketconsumptiontext_topmargin" >
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price"
+                        android:textColor="@color/orderTicketConfirmationtextcolor"
+                        android:textSize="@dimen/orderTicketConfirmation_ticketOrderCode_detailtextSize" />
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:id="@+id/ticketCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="$10.00"
+                        android:textColor="#c0c0c0"
+                        android:textSize="@dimen/orderTicketConfirmation_ticketOrderCode_detailtextSize" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35" >
+
+                    <Button
+                        android:id="@+id/btnTofinilize"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/RedpartyFinderRed"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/orderTicketConfirmation_button_textsize" />
+                </LinearLayout>
+
+                <!--
+                     <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.08" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35" >
+
+                    <Button
+                        android:id="@+id/btnTofinilize1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/RedpartyFinderRed"
+                        android:clickable="true"
+                        android:text="@string/finilize_order"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/orderTicketConfirmation_button_textsize" />
+                </LinearLayout>
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--
+    //////////////////////////////////////////////
+    for pending screen
+    //////////////////////////////////////////////
+    -->
+
+    <LinearLayout
+        android:id="@+id/PendingTicketLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/weight_header" >
+
+            <RelativeLayout
+                android:id="@+id/main1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/orderTicketbackButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/order_history_header_image_leftmargin"
+                    android:background="@drawable/backbtn"
+                    android:visibility="gone" />
+
+                <com.partyfinder.CustomView.CustomFontSemiBold
+                    android:id="@+id/PendingLayoutHeaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/layout_top_heading_color"
+                    android:textSize="@dimen/All_screen_header_text_size"
+                    android:textStyle="bold" />
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/heder_line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/order_history_divider_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/orderHistorydividercolor" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.43"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.20"
+                android:gravity="center" >
+
+                <com.partyfinder.CustomView.CustomFontBold
+                    android:id="@+id/TicketStatusMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="PEDIDO EM ANÁLISE"
+                    android:textColor="@color/orsummarybelow_edittext_text_colour"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.80" >
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/PendingOrCanceledMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="dfghjkd dg dsfudsgdfkd dsaui dsafogphdsg uiaopldhfg uidahfgd "
+                    android:textColor="@color/orsummarybelow_edittext_text_colour"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.07" >
+
+            <LinearLayout
+                android:id="@+id/edit_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/head2"
+                android:background="@color/GrayHot"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/your_order"
+                        android:textColor="@color/orsummarybelow_edittext_text_colour"
+                        android:textSize="@dimen/orsummarybelow_edittext_text_size" />
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:id="@+id/pendingOrCanceledOrderCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/your_order"
+                        android:textColor="@color/ggreen"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.28"
+            android:background="#000000" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/orderTicketConfirmation_ticketDetail_padding" >
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/ticketAndTable1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Event Name"
+                    android:textColor="@color/RedpartyFinderRed"
+                    android:textSize="@dimen/orderTicketConfirmation_ticketOrderCode_detailtextSize" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ticketAndTable1"
+                    android:layout_marginTop="@dimen/orderTicketConfirmation_ticketconsumptiontext_topmargin" >
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price"
+                        android:textColor="@color/orderTicketConfirmationtextcolor"
+                        android:textSize="@dimen/orderTicketConfirmation_ticketOrderCode_detailtextSize" />
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:id="@+id/ticketCost1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="$10.00"
+                        android:textColor="#c0c0c0"
+                        android:textSize="@dimen/orderTicketConfirmation_ticketOrderCode_detailtextSize" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35" >
+
+                    <Button
+                        android:id="@+id/btnTofinilize1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/RedpartyFinderRed"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:textColor="@color/White" />
+                </LinearLayout>
+
+                <!--
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.08" >
+                </LinearLayout>
+                -->
+
+
+                <!--
+ <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35" >
+ <Button
+                        android:id="@+id/btn_addToPassbook"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/RedpartyFinderRed"
+                        android:clickable="true"
+                        android:text="@string/finilize_order"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/orderTicketConfirmation_button_textsize" />
+                    
+                </LinearLayout>
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

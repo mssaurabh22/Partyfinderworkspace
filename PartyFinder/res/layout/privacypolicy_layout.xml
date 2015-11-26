@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/weight_header" 
+            android:orientation="vertical">
+            <RelativeLayout
+        android:id="@+id/r"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+   >
+  <RelativeLayout 
+                          android:id="@+id/backButton_layout"
+                    android:layout_height="match_parent"
+                    android:layout_width="80dp"
+                    android:layout_alignParentLeft="true">
+        <ImageButton
+            android:id="@+id/backVenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/backbtn"
+            android:visibility="visible"
+                 android:layout_marginLeft="13dp"  />
+        
+            </RelativeLayout>
+
+    <com.partyfinder.CustomView.CustomFontSemiBold
+                  android:textColor="@color/layout_top_heading_color"
+                android:textSize="@dimen/All_screen_header_text_size"
+                android:textStyle="bold" 
+            android:id="@+id/privacyPolicyHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/privacyPolicy"
+         
+           />
+    
+                  <TextView
+        android:id="@+id/fds"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+    android:layout_alignParentBottom="true"
+        android:background="#b2b2b2" />   
+    </RelativeLayout>
+
+  </LinearLayout>
+  
+        
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.89" >
+            
+                 <ScrollView
+        android:id="@+id/privacyPolicyScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fds"
+        android:overScrollMode="never"
+        android:paddingLeft="@dimen/privacyPolicy_scroll_padding"
+        android:paddingRight="@dimen/privacyPolicy_scroll_padding"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.partyfinder.CustomView.CustomFontLight
+                android:id="@+id/privacyPolicyContent1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Privacy_policy_text1"
+                android:textColor="@color/Black"
+                android:layout_marginTop="3dp"
+                android:textSize="@dimen/privacyPolicy_textcontent1_textsize"
+        />
+
+            <com.partyfinder.CustomView.CustomFontLight
+                android:id="@+id/privacyPolicyContent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/privacyPolicyContent1"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="@string/Privacy_policy_text2"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/privacyPolicy_textcontent2_textsize" />
+        </RelativeLayout>
+    </ScrollView>
+                
+                
+  </LinearLayout>
+        
+</LinearLayout>
+
+    </RelativeLayout>

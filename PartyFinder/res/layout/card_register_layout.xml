@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+             android:layout_weight="@dimen/weight_header"
+            >
+
+            <RelativeLayout
+                android:id="@+id/l"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/backButton_layout"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" >
+
+                    <ImageButton
+                        android:id="@+id/img_billingInfo_bck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/singup_backBtn_leftMargin"
+                        android:background="#00000000"
+                        android:src="@drawable/backbtn" />
+                </RelativeLayout>
+
+                <com.partyfinder.CustomView.CustomFontSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/card_register_layout_Heading"
+                    android:textColor="@color/layout_top_heading_color"
+                    android:textSize="@dimen/All_screen_header_text_size" />
+
+                <TextView
+                    android:id="@+id/billing_info_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#cccec3" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.89"
+            android:orientation="vertical" >
+
+      <!--       <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="false"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                 >
+ -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                   android:layout_gravity="bottom"
+                    android:orientation="vertical"
+                    android:weightSum="0.9" >
+
+                    <!--
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.07"
+                        android:gravity="center" >
+                    <TextView 
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"/>
+                             </LinearLayout>
+                    -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.08"
+                        android:gravity="center" >
+
+                        <com.partyfinder.CustomView.CustomTextView
+                            android:id="@+id/SubHeading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/billing_info_divider"
+                            android:layout_marginLeft="@dimen/card_register_layout_Text_leftRight_margin"
+                            android:layout_marginRight="@dimen/card_register_layout_Text_leftRight_margin"
+                            android:gravity="center"
+                            android:singleLine="false"
+                            android:text="@string/card_register_layout_subHeading"
+                            android:textColor="@color/cardRegister_SubHeading_color"
+                            android:textSize="@dimen/card_register_layout_sub_headingTextSize" />
+                    </LinearLayout>
+
+                    <!--
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.07"
+                        android:gravity="center" >
+                    <TextView 
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"/>
+                             </LinearLayout>
+                    -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="0.085"
+                        android:background="@drawable/inputbackgroundgray" >
+
+                        <com.partyfinder.CustomView.CustomEditText
+                            android:id="@+id/CardUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/inputbg"
+                            android:hint="@string/card_register_layout_EditText1"
+                         android:inputType="text|textCapWords"
+                            android:paddingLeft="@dimen/card_register_layout_editText_leftPadding"
+                            android:singleLine="true"
+                            android:textColor="@color/Signup_input_color"
+                            android:textColorHint="@color/Registration_edittext_hint_color"
+                            android:textSize="@dimen/pfsingup_editText_textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.03" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="0.085"
+                        android:background="@drawable/inputbackgroundgray"
+                        android:orientation="vertical" >
+
+                        <com.partyfinder.CustomView.CustomEditText
+                            android:id="@+id/UserCreditCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/inputbg"
+                            android:hint="@string/card_register_layout_EditText2"
+                            android:inputType="number"
+                            android:maxLength="19"
+                            android:paddingLeft="@dimen/card_register_layout_editText_leftPadding"
+                            android:singleLine="true"
+                            android:textColor="@color/Signup_input_color"
+                            android:textColorHint="@color/Registration_edittext_hint_color"
+                            android:textSize="@dimen/pfsingup_editText_textSize" />
+
+                        <!--
+                             <com.partyfinder.CustomView.CustomTextView
+                            android:id="@+id/cardNoValidationTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:gravity="bottom|right"
+                            android:textSize="10dp" />
+                        -->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.03" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="0.085"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.46"
+                            android:background="@drawable/inputbackgroundgray" >
+
+                            <com.partyfinder.CustomView.CustomEditText
+                                android:id="@+id/creditCardSec"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/inputbg"
+                                android:hint="@string/card_register_layout_EditText3"
+                                android:inputType="numberPassword"
+                                android:nextFocusForward="@+id/cardVal"
+                                android:maxLength="3"
+                                android:imeOptions="actionNext"
+                                android:paddingLeft="@dimen/card_register_layout_editText_leftPadding"
+                                android:singleLine="true"
+                                android:textColor="@color/Signup_input_color"
+                                android:textColorHint="@color/Registration_edittext_hint_color"
+                                android:textSize="@dimen/pfsingup_editText_textSize" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.06" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.47"
+                            android:background="@drawable/inputbackgroundgray" >
+
+                            <com.partyfinder.CustomView.CustomEditText
+                                android:id="@+id/cardVal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/inputbg"
+                                android:hint="mm/yy"
+                                android:inputType="number"
+                                android:paddingLeft="@dimen/card_register_layout_editText_leftPadding"
+                                android:singleLine="true"
+                                android:textColor="@color/Signup_input_color"
+                                android:imeOptions="actionNext"
+                                android:textColorHint="@color/Registration_edittext_hint_color"
+                                android:textSize="@dimen/pfsingup_editText_textSize" />
+                            
+                                   
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.03" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="0.085"
+                        android:background="@drawable/inputbackgroundgray"
+                        android:orientation="vertical" >
+
+                        <com.partyfinder.CustomView.CustomEditText
+                            android:id="@+id/UserCPFno"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/inputbg"
+                            android:hint="@string/card_register_layout_EditText4"
+                            android:inputType="number"
+                            android:maxLength="19"
+                            android:paddingLeft="@dimen/card_register_layout_editText_leftPadding"
+                            android:singleLine="true"
+                                  android:imeOptions="actionNext"
+                            android:textColor="@color/Signup_input_color"
+                            android:textColorHint="@color/Registration_edittext_hint_color"
+                            android:textSize="@dimen/pfsingup_editText_textSize" />
+
+                        <!--
+                             <com.partyfinder.CustomView.CustomTextView
+                            android:id="@+id/cardNoValidationTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:gravity="bottom|right"
+                            android:textSize="10dp" />
+                        -->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.03" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="0.085"
+                        android:orientation="horizontal"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.46"
+                            android:background="@drawable/inputbackgroundgray" >
+
+                            <com.partyfinder.CustomView.CustomEditText
+                                android:id="@+id/UserDateOfBirth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/inputbg"
+                                android:hint="@string/card_register_layout_EditText5"
+                                android:inputType="number"
+                                android:paddingLeft="@dimen/card_register_layout_editText_leftPadding"
+                                android:singleLine="true"
+                                android:textColor="@color/Signup_input_color"
+                                android:imeOptions="actionNext"
+                                android:textColorHint="@color/Registration_edittext_hint_color"
+                                android:textSize="@dimen/pfsingup_editText_textSize" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.06" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.47"
+                            android:background="@drawable/inputbackgroundgray" >
+
+                            <com.partyfinder.CustomView.CustomEditText
+                                android:id="@+id/UserTelephoneNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/inputbg"
+                                android:digits="0123456789+"
+                                android:hint="@string/card_register_layout_EditText6"
+                                android:inputType="phone"
+                                android:paddingLeft="@dimen/card_register_layout_editText_leftPadding"
+                                android:singleLine="true"
+                               
+                                android:textColor="@color/Signup_input_color"
+                                android:textColorHint="@color/Registration_edittext_hint_color"
+                                android:textSize="@dimen/pfsingup_editText_textSize"/>
+                                
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.03" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="0.085"
+                        android:focusable="true"
+                        android:windowSoftInputMode="adjustResize" >
+
+                        <com.partyfinder.CustomView.CustomButtonView
+                            android:id="@+id/btn_SaveUserInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/registerbtn"
+                            android:gravity="center"
+                            android:text="@string/card_register_layout_SaveButtonTxt"
+                            android:textColor="@color/Signup_Registerbtn_text_color"
+                            android:textSize="@dimen/card_register_layout_Btn_textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.03" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.12"
+                        android:gravity="center" >
+
+                        <RelativeLayout
+                            android:id="@+id/visaImageLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/card"
+                            android:gravity="center" >
+
+                            <!--
+                                 android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            -->
+                            <!-- > -->
+
+
+                            <!--
+                                 <ImageView
+                                android:id="@+id/visaImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/card_register_layout_leftRight_margin"
+                                android:src="@drawable/visaimage" />
+
+                            <ImageView
+                                android:id="@+id/MasterCard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_toRightOf="@+id/visaImage"
+                                android:src="@drawable/mastercardimage" />
+                            -->
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+           <!--  </ScrollView> -->
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

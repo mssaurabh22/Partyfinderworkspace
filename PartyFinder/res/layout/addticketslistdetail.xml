@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.08" >
+                 <TextView android:layout_height="match_parent"
+                    android:layout_width="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical" >
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:id="@+id/ticketType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/vip_text_left_margin"
+                        android:gravity="center_vertical"
+                        android:text="Ticket Type"
+                        android:textColor="#e74f64"
+                        android:textSize="@dimen/ticket_type_textsize" />
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:id="@+id/event_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/event_date_right_margin"
+                        android:paddingTop="2dp"
+                        android:text="Date"
+                        android:textColor="#80807a"
+                        android:textSize="@dimen/ticket_type_datetextsize" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical" >
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:id="@+id/edison_club_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/vip_text_left_margin"
+                        android:text="Club Name"
+                        android:textColor="#80807a"
+                        android:textSize="@dimen/club_text_size" />
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:id="@+id/event_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/event_date_right_margin"
+                        android:text="8:30pm"
+                        android:textColor="#80807a"
+                        android:textSize="@dimen/ticket_type_datetextsize" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.08" >
+                 <TextView android:layout_height="match_parent"
+                    android:layout_width="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.24"
+                android:gravity="center_vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/calculate_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/vip_text_left_margin" >
+
+                        <ImageButton
+                            android:id="@+id/minus_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/minusbg"
+                            android:gravity="center"
+                            android:src="@drawable/minusw" />
+
+                        <com.partyfinder.CustomView.CustomFontBold
+                            android:id="@+id/calculate_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/minus_btn"
+                            android:background="@drawable/numberbg"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/addd_ticket_calculate_text_size"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:id="@+id/plusButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/calculate_text"
+                            android:background="@drawable/addbg"
+                            android:gravity="center"
+                            android:src="@drawable/addkk" />
+                    </RelativeLayout>
+
+                    <com.partyfinder.CustomView.CustomFontSemiBold
+                        android:id="@+id/dc_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/event_date_right_margin"
+                        android:text="$55.00"
+                        android:textColor="#c0c0c0"
+                        android:textSize="@dimen/price_text_size"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.10"
+                >
+                <TextView android:layout_height="match_parent"
+                    android:layout_width="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.18" >
+
+                <RelativeLayout
+                    android:id="@+id/consumption_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/consumptionbg" >
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:id="@+id/comsumption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/vip_text_left_margin"
+                        android:text="Consumação"
+                        android:textColor="#80807a"
+                        android:textSize="@dimen/ticket_type_consumptiontextsize" />
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:id="@+id/consumption_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/event_date_right_margin"
+                        android:text="Total Consumption"
+                        android:textColor="#80807a"
+                        android:textSize="@dimen/ticket_type_consumptiontextsize" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

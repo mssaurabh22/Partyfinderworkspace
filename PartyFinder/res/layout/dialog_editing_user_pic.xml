@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/editingProfilePicLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/editingProfilePicLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom" >
+
+                  <com.partyfinder.CustomView.CustomFontRegular
+                android:id="@+id/DeletePhotoBtn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/roundedcorner_for_usecurrent_card_cancel"
+                android:gravity="center"
+                android:text="Deletar Foto"
+                android:textColor="@color/RedpartyFinderRed"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+                 <com.partyfinder.CustomView.CustomFontRegular
+                android:id="@+id/OpenCameraBtn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/DeletePhotoBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/roundedcorner_for_usecurrent_card_cancel"
+                android:gravity="center"
+                android:text="Titar Foto"
+                android:textColor="#017BFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+                 <com.partyfinder.CustomView.CustomFontRegular
+                android:id="@+id/OpenGalleryBtn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/OpenCameraBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/roundedcorner_for_usecurrent_card_cancel"
+                android:gravity="center"
+                android:text="Impotar de Imagens"
+                android:textColor="#017BFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+                   <com.partyfinder.CustomView.CustomFontRegular
+                android:id="@+id/existingCardCancel"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/OpenGalleryBtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/roundedcorner_for_usecurrent_card_cancel"
+                android:gravity="center"
+                android:text="Cancelar"
+                android:textColor="#017BFF"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/orderHistoryWholeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layerType="hardware"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:layerType="hardware" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@dimen/weight_header" >
+
+                <RelativeLayout
+                    android:id="@+id/orderhistoryHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffffff"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/btn_back_Layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/btn_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/order_history_header_image_leftmargin"
+                            android:background="@drawable/backbtn" />
+                    </RelativeLayout>
+
+                    <com.partyfinder.CustomView.CustomFontSemiBold
+                        android:id="@+id/upcomingeventheading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Ordens"
+                        android:textColor="@color/layout_top_heading_color"
+                        android:textSize="@dimen/All_screen_header_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/order_history_divider_height"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/orderHistorydividercolor" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.90"
+                android:background="#232323"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/orderhistoryHeader" >
+
+                    <!-- <ListView -->
+
+
+                    
+<!--                          <eu.erikw.PullToRefreshListView -->
+                                     <com.costum.android.widget.PullAndLoadListView
+                        android:id="@+id/orderDetailListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#232323"
+                        android:divider="@drawable/myprofiledivider"
+                        android:listSelector="#00000000"
+                        android:overScrollMode="never"
+                        android:paddingLeft="@dimen/order_history_listView_item_datetext_leftmargin"
+                        android:paddingRight="@dimen/order_history_listView_item_datetext_leftmargin"
+                        android:scrollbars="none"
+                             android:layerType="hardware" 
+                        tools:listitem="@layout/order_history_listview_item_layout" />
+                   
+<!-- 
+                    <pt.fjss.pulltoupdatelibrary.PullToUpdateListView
+                        android:id="@+id/orderDetailListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#232323"
+                        android:divider="@drawable/myprofiledivider"
+                        android:layerType="hardware"
+                        android:listSelector="#00000000"
+                        android:overScrollMode="never"
+                        android:paddingLeft="@dimen/order_history_listView_item_datetext_leftmargin"
+                        android:paddingRight="@dimen/order_history_listView_item_datetext_leftmargin"
+                        android:scrollbars="none"
+                        tools:listitem="@layout/order_history_listview_item_layout" /> -->
+
+                    <!-- </ListView> -->
+
+                    <ProgressBar
+                        android:id="@+id/orderProgressBar"
+                        android:layout_width="@dimen/hdpi_progressBar_height"
+                        android:layout_height="@dimen/hdpi_progressBar_height"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

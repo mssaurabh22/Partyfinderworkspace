@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <FrameLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/fragmentContainer"
+        android:clickable="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/weight_header" >
+
+            <RelativeLayout
+                android:id="@+id/l"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/backButton_layout"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true" >
+
+                    <ImageButton
+                        android:id="@+id/btn_settingBck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="13dp"
+                        android:background="#00000000"
+                        android:src="@drawable/backbtn" />
+                </RelativeLayout>
+
+                <com.partyfinder.CustomView.CustomFontSemiBold
+                    android:id="@+id/heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/setting"
+                    android:textColor="@color/layout_top_heading_color"
+                    android:textSize="@dimen/All_screen_header_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#b2b2b2" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.38" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/fbUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/imguser" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.51"
+            android:background="#232323" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#232323"
+                android:overScrollMode="never"
+                android:paddingLeft="5dp"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28px"
+                    android:layout_marginRight="28px"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/btnBillingInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/mysetting_layout_textview_height" >
+
+                        <ImageView
+                            android:id="@+id/btnbillinginfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/btnbillinginfo" />
+
+                        <TextView
+                            android:id="@+id/Tvdevider"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/eventsdivider" />
+
+                        <com.partyfinder.CustomView.CustomTextView
+                            android:id="@+id/tbillinginfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/mysetting_layout_marginleft_textview"
+                            android:layout_toRightOf="@+id/btnbillinginfo"
+                            android:text="@string/billingInformation"
+                            android:textColor="#c0c0c0"
+                            android:textSize="@dimen/mysetting_layout_textview_txtsize" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btnPrivacyPolicy"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/mysetting_layout_textview_height" >
+
+                        <ImageView
+                            android:id="@+id/privacypolicy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/btnprivacypolicy" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/eventsdivider" />
+
+                        <com.partyfinder.CustomView.CustomTextView
+                            android:id="@+id/tvPr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/mysetting_layout_marginleft_textview"
+                            android:layout_toRightOf="@+id/privacypolicy"
+                            android:text="@string/privacyPolicy"
+                            android:textColor="#c0c0c0"
+                            android:textSize="@dimen/mysetting_layout_textview_txtsize" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btnAccountPolicy"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/mysetting_layout_textview_height"
+                        android:visibility="visible" >
+
+                        <ImageView
+                            android:id="@+id/accountPrivacy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/btnprivacypolicy" />
+
+                        <com.partyfinder.CustomView.CustomTextView
+                            android:id="@+id/div1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/mysetting_layout_marginleft_textview"
+                            android:layout_toRightOf="@+id/accountPrivacy"
+                            android:text="@string/cerditCards"
+                            android:textColor="#A4A4A4"
+                            android:textSize="@dimen/mysetting_layout_textview_txtsize" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/eventsdivider" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+</RelativeLayout>

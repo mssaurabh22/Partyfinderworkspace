@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  
+    <color name="edit_textbackground">#333333</color>
+    <color name="TextView_background">#676767</color>
+    <color name="button_background_color">#e74f64</color>
+
+	<color name="text_tab_selected">#ffffff</color>
+	<color name="text_tab_unselected">#7A2B2B</color>
+    <color name="layout_top_heading_color">#4d4d4d</color>  <!--  191919 -->
+    <color name="Blue">#2980b9</color>
+    <color name="White">#ffffff</color>
+    <color name="Black">#000000</color>
+    <color name="Gray">#c9c9c9</color>
+    <color name="GrayLight">#eeeeee</color>
+    <color name="GrayHot">#272727</color>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#ff0000</color>   <!-- #626262 gray -->
+    <color name="counter_text_color">#c5c4c4</color><!--#c5c4c4 lite gray  -->
+    <color name="tabMedium">#ffffff</color>
+	<color name="tabDark">#A52A2A</color>            <!-- red -->
+    <color name="tabTransparent">#000000</color>
+    <color name="Transparent">#00000000</color>
+    <color name="RoundedImageViewBorder_color">#EFFBF2</color>
+    
+   
+    <!--Responsive Layouts Color   -->
+	
+    <color name="Signup_input_color">#757575</color>
+    <color name="Signup_hint_color">#8a8a8a</color>
+    <color name="Signup_Heading_color">#4d4d4d</color>
+    <color name="Signup_Registerbtn_text_color">#ffffff</color>
+    
+        <!-- order_summary_layout_colour -->
+    <color name="ordersummary_text_colour">#000000</color>
+    <color name="text1_text_colour">#42b49a</color>
+    <color name="text2_text_colour">#80807a</color>
+    <color name="orsummary_btn_text_colour">#ececec</color>
+    <color name="orsummary_btn_backround_colour">#e55063</color>
+    <color name="orsummarybelow_edittext_backround_colour">#2e2e2e</color>
+    <color name="orsummarybelow_edittext_text_colour">#80807a</color>
+    <color name="listview_edittext2_text_colour">#80807a</color>
+    <color name="listview_edittext1_text_colour">#e74f64</color>
+    <color name="listview_edittext3_text_colour">#ffffff</color>
+    <color name="listview_edittext4_text_colour">#80807a</color>
+        <color name="RedpartyFinderRed">#e74f64</color>
+    <color name="GreenPartyFinderGreen">#04B4AE</color>
+    <color name="orderHistorydividercolor">#cccec3</color>
+    <color name="orderTicketConfirmationtextcolor">#80807a</color>
+    <color name="rred">#ED1515</color>
+    <color name="ggreen">#42b49a</color>
+    <color name="yyellow">#E7F043</color>
+    <color name="bblue">#2549B3</color>
+    
+        <color name="cardRegister_SubHeading_color">#595959</color>
+        
+        <color name="red_color_settingLayout">#e74f64</color>
+    
+        
+        
+        
+        <!-- Extra --><!-- Extra --><!-- Extra --><!-- Extra --><!-- Extra -->
+        <!-- Extra --><!-- Extra --><!-- Extra --><!-- Extra --><!-- Extra -->
+        <!-- Extra --><!-- Extra --><!-- Extra --><!-- Extra --><!-- Extra -->
+        
+        
+        <color name="Registration_edittext_hint_color">#C4C4C4</color>
+        
+        
+        <color name="galleryAdapterHeaderColor">#33a488</color>
+        <color name="galleryAdapterSubHeaderColor">#42b49a</color>
+     
+</resources>

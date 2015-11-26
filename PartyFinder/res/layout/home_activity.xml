@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ProgressBar
+                android:id="@+id/facebookProg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+
+            <com.partyfinder.CustomView.CustomFontLight
+                android:id="@+id/skipLogin"
+                android:layout_width="45dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Pular"
+                android:textColor="#4a4a4a"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <RelativeLayout
+                android:id="@+id/imagelogolayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/logo_marginTop" >
+
+                <ImageView
+                    android:id="@+id/partyfinderLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logo" />
+
+                <com.facebook.widget.LoginButton
+                    android:id="@+id/authButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/partyfinderLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/fb_button_marginTop"
+                    style="@style/FacebookLoginButton"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true" >
+
+                <Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="@dimen/singup_marginBottam"
+                    android:layout_marginLeft="@dimen/singup_marginLeft"
+                    android:background="@drawable/signup" />
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/login_btn_marginBottam"
+                    android:layout_marginRight="@dimen/login_btn_marginRight"
+                    android:background="@drawable/login" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

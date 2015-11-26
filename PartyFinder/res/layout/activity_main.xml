@@ -1,0 +1,225 @@
+<com.partyfinder.widget.SlideHolder xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slideHolder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/leftdrawer"
+        android:layout_width="@dimen/Activity_main_leftdrawer_width"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/drawerlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#1F2120"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginLeft="@dimen/Activity_main_userimage_layout_margin"
+                android:layout_marginRight="@dimen/Activity_main_userimage_layout_margin"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="@dimen/Activity_main_listView_userImageHeightWidth"
+                    android:layout_height="@dimen/Activity_main_listView_userImageHeightWidth"
+                    android:background="@drawable/imagebg"
+                    android:padding="4dp" >
+
+                    <com.partyfinder.CustomView.ImageViewRounded
+                        android:id="@+id/ImgView_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY" />
+
+                    <ProgressBar
+                        android:id="@+id/imageLoadMypro"
+                        android:layout_width="@dimen/hdpi_progressBar_height"
+                        android:layout_height="@dimen/hdpi_progressBar_height"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/tv_username"
+                    android:layout_width="@dimen/Activity_main_listView_username_textwidth"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/Activity_main_listView_username_topmargin"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textColor="#42b49a"
+                    android:textSize="@dimen/Activity_main_listView_username_textsize" />
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/tV_userFriends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/Activity_main_listView_userFriends_topmargin"
+                    android:text=""
+                    android:textColor="#4f4f4f"
+                    android:textSize="@dimen/Activity_main_listView_userFriends_textsize" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/drawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/listview_bgimage"
+                android:divider="@drawable/menudivider"
+                android:listSelector="@drawable/listviewselecterimage"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:textAlignment="center" />
+
+            <!-- android:layout_marginBottom="@dimen/Activity_main_listView_topMargin" -->
+            <!-- android:layout_marginTop="@dimen/Activity_main_listView_topMargin" -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/realTabContentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/realtabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.8"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:id="@+id/tabhostlayout111111"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Activity_main_tab_host_imageSize_layoutHeight"
+            android:layout_alignParentBottom="true"
+            android:background="@color/button_background_color" >
+
+            <LinearLayout
+                android:id="@+id/mainMenuLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:id="@+id/mainMenu"
+                    android:layout_width="@dimen/Activity_main_tab_host_imageSize"
+                    android:layout_height="@dimen/Activity_main_tab_host_imageSize"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/mainmenuc" />
+
+                <TextView
+                    android:id="@+id/mainMenuTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:paddingBottom="3dp"
+                    android:text="@string/main_menu"
+                    android:textSize="@dimen/Activity_main_tab_host_textSize"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activityFeedLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:id="@+id/activityFeed"
+                    android:layout_width="@dimen/Activity_main_tab_host_imageSize"
+                    android:layout_height="@dimen/Activity_main_tab_host_imageSize"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/activityfeedc" />
+
+                <TextView
+                    android:id="@+id/actFeedTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:paddingBottom="3dp"
+                    android:text="@string/activity_feed_menu"
+                    android:textSize="@dimen/Activity_main_tab_host_textSize"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/whatsHotLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:id="@+id/whatsHot"
+                    android:layout_width="@dimen/Activity_main_tab_host_imageSize"
+                    android:layout_height="@dimen/Activity_main_tab_host_imageSize"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/whatshotc" />
+
+                <TextView
+                    android:id="@+id/whatsHotTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:paddingBottom="3dp"
+                    android:text="@string/whats_hot_menu"
+                    android:textSize="@dimen/Activity_main_tab_host_textSize"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/upcomingEventLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:id="@+id/upcomingEvent"
+                    android:layout_width="@dimen/Activity_main_tab_host_imageSize"
+                    android:layout_height="@dimen/Activity_main_tab_host_imageSize"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/upcomingeventc" />
+
+                <TextView
+                    android:id="@+id/upcomingEventTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:paddingBottom="3dp"
+                    android:text="@string/upcoming_menu"
+                    android:textSize="@dimen/Activity_main_tab_host_textSize"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.partyfinder.widget.SlideHolder>

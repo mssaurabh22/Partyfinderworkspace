@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@dimen/weight_header" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" >
+
+                    <ImageView
+                        android:id="@+id/rel_btn_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23px"
+                        android:src="@drawable/backbtn"
+                        android:visibility="gone" />
+
+                    <com.partyfinder.CustomView.CustomFontSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/Recommend"
+                        android:textColor="@color/layout_top_heading_color"
+                        android:textSize="@dimen/All_screen_header_text_size"
+                        android:textStyle="bold" />
+   <RelativeLayout
+                    android:id="@+id/img_SearchIcon_layout"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true" >
+                        
+       
+                    <ImageButton
+                        android:id="@+id/search_recommended"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="23px"
+                        android:background="#00000000"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/searchicon" />
+
+        </RelativeLayout>
+                    <TextView
+                        android:id="@+id/tvv"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#b2b2b2" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.89"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <!-- SearchLayouts -->
+
+                    <RelativeLayout
+                        android:id="@+id/layouts_searchRec"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/bottam_SearchBar_hight"
+                        android:layout_alignParentTop="true"
+                        android:background="#f9f9f7"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:id="@+id/tv_cancle"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignTop="@+id/imgViewResetRec"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="14dp"
+                            android:layout_toLeftOf="@+id/search"
+                            android:background="@drawable/searchicon"
+                            android:scaleType="fitXY" />
+
+                        <EditText
+                            android:id="@+id/SearchingEditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/tv_cancle"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="#f9f9f7"
+                            android:ems="11"
+                            android:focusable="true"
+                            android:inputType="text"
+                            android:textSize="@dimen/searchBar_textsize" />
+
+                        <ImageView
+                            android:id="@+id/imgViewResetRec"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="14dp"
+                            android:background="@drawable/resetfiltering" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#b2b2b2" />
+                    </RelativeLayout>
+
+                    <ProgressBar
+                        android:id="@+id/proBar_loadRec"
+                        android:layout_width="@dimen/hdpi_progressBar_height"
+                        android:layout_height="@dimen/hdpi_progressBar_height"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+
+                    <com.baoyz.swipemenulistview.SwipeMenuListView
+                        android:id="@+id/listViewRec"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_below="@+id/layouts_searchRec"
+                        android:divider="@drawable/eventsdivider"
+                        android:overScrollMode="never"
+                        android:scrollbars="none"
+                        tools:listitem="@layout/recommended_listview_layouts" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

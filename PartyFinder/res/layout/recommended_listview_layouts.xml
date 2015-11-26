@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+    
+       <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+    
+        
+      
+        android:weightSum="1">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+           android:layout_weight="0.20"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+        
+        <LinearLayout
+               android:id="@+id/imageLayout" 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center">
+                 <RelativeLayout
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+      
+            >
+
+            <ImageView
+                android:id="@+id/imageItemRecommended"
+                android:layout_width="@dimen/upcoming_event_image_width"
+                android:layout_height="@dimen/upcoming_event_image_height"
+          android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/event_image" />
+
+            <ProgressBar
+                android:id="@+id/progressRecommend"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"  />
+
+        </RelativeLayout>
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+             android:id="@+id/textLayout"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:gravity="center_vertical">
+            <LinearLayout
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+              android:layout_marginRight="30dp"
+           
+                android:layout_marginTop="@dimen/recommended_listview_text_topmargin"
+               
+                android:orientation="vertical" >
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/eventVenueName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Tom Cruise"
+                    android:textColor="@color/GreenPartyFinderGreen"
+                    android:textSize="@dimen/recommended_text1_textsize" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:orientation="horizontal" >
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:id="@+id/dateRecommend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="February 17"
+                        android:textColor="#bfbfbf"
+                        android:textSize="@dimen/upcoming_text3_size" />
+                </LinearLayout>
+
+             
+
+                <LinearLayout
+                    android:id="@+id/layouts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal" >
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:id="@+id/mRecommendedBy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="Recomendado por"
+                        android:textColor="#bfbfbf"
+                        android:textSize="@dimen/recommended_text2_textsize"
+                        android:typeface="sans" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal" >
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:id="@+id/RecommendedByUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:singleLine="true"
+                        android:text="Tobbo"
+                        android:textColor="@color/RedpartyFinderRed"
+                        android:textSize="@dimen/recommended_text3_textsize"
+                        android:typeface="sans" />
+                </LinearLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        
+          </LinearLayout>   
+        
+        
+        
+    </LinearLayout>
+    </RelativeLayout>

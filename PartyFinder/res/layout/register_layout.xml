@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/aaaaaaaaa"
+        android:layout_width="@dimen/hdpi_progressBar_height"
+        android:layout_height="@dimen/hdpi_progressBar_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/weight_header" 
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/l"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/btn_regisBck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/pfsingup_backBtn_leftMargin"
+                    android:background="#00000000"
+                    android:src="@drawable/backbtn" />
+
+                <com.partyfinder.CustomView.CustomFontSemiBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/Register"
+                    android:textColor="@color/layout_top_heading_color"
+                    android:textSize="@dimen/All_screen_header_text_size"
+                    android:textStyle="bold" />
+  <TextView
+                    android:id="@+id/tvvv"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#b2b2b2" />
+            </RelativeLayout>
+                
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.03" 
+            android:background="#00000000">
+           
+              <TextView 
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.87" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight=".09"
+                        android:background="@drawable/inputbackgroundgray" >
+
+                        <com.partyfinder.CustomView.CustomEditText
+                            android:id="@+id/eT_userFirstName"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/inputbackgroundgray"
+                            android:hint="@string/name"
+                            android:inputType="textPersonName"
+                            android:paddingLeft="@dimen/pfsingup_editText_leftPadding"
+                            android:singleLine="true"
+                            android:textColor="@color/Signup_input_color"
+                            android:textColorHint="@color/Registration_edittext_hint_color"
+                            android:textSize="@dimen/pfsingup_editText_textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".03" >
+                         <TextView 
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight=".09"
+                        android:background="@drawable/inputbackgroundgray" >
+
+                        <com.partyfinder.CustomView.CustomEditText
+                            android:id="@+id/eT_userLastName"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/inputbackgroundgray"
+                            android:hint="@string/maleFemale"
+                            android:inputType="text"
+                            android:paddingLeft="@dimen/pfsingup_editText_leftPadding"
+                            android:singleLine="true"
+                            android:textColor="@color/Signup_input_color"
+                            android:textColorHint="@color/Registration_edittext_hint_color"
+                            android:textSize="@dimen/pfsingup_editText_textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".03" >
+                         <TextView 
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight=".09"
+                        android:background="@drawable/inputbackgroundgray" >
+
+                        <com.partyfinder.CustomView.CustomEditText
+                            android:id="@+id/eT_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/inputbackgroundgray"
+                            android:hint="@string/email"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="@dimen/pfsingup_editText_leftPadding"
+                            android:singleLine="true"
+                            android:textColor="@color/Signup_input_color"
+                            android:textColorHint="@color/Registration_edittext_hint_color"
+                            android:textSize="@dimen/pfsingup_editText_textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".03" >
+                         <TextView 
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight=".09"
+                        android:background="@drawable/inputbackgroundgray" >
+
+                        <com.partyfinder.CustomView.CustomEditText
+                            android:id="@+id/eT_confirmEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/inputbackgroundgray"
+                            android:hint="@string/confirmMail"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="@dimen/pfsingup_editText_leftPadding"
+                            android:singleLine="true"
+                            android:textColor="@color/Signup_input_color"
+                            android:textColorHint="@color/Registration_edittext_hint_color"
+                            android:textSize="@dimen/pfsingup_editText_textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".03" >
+                         <TextView 
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight=".09"
+                        android:background="@drawable/inputbackgroundgray" >
+
+                        <com.partyfinder.CustomView.CustomEditText
+                            android:id="@+id/eText_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/inputbackgroundgray"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:paddingLeft="@dimen/pfsingup_editText_leftPadding"
+                            android:singleLine="true"
+                            android:textColor="@color/Signup_input_color"
+                            android:textColorHint="@color/Registration_edittext_hint_color"
+                            android:textSize="@dimen/pfsingup_editText_textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".03" >
+                         <TextView 
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight=".09"
+                        android:background="@drawable/inputbackgroundgray" >
+
+                        <com.partyfinder.CustomView.CustomEditText
+                            android:id="@+id/eT_confirmPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/inputbackgroundgray"
+                            android:hint="@string/confirmPassword"
+                            android:inputType="textPassword"
+                            android:paddingLeft="@dimen/pfsingup_editText_leftPadding"
+                            android:singleLine="true"
+                            android:textColor="@color/Signup_input_color"
+                            android:textColorHint="@color/Registration_edittext_hint_color"
+                            android:textSize="@dimen/pfsingup_editText_textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".03" >
+                         <TextView 
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight=".09"
+                        android:background="@drawable/inputbackgroundgray" >
+
+                        <com.partyfinder.CustomView.CustomButtonView
+                            android:id="@+id/btn_SignUp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/registerbtn"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="@string/Register"
+                            android:textColor="@color/Signup_Registerbtn_text_color"
+                            android:textSize="@dimen/pfsingup_registerBtn_textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".03" >
+                        <TextView 
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

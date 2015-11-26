@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:focusable="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@dimen/weight_header" >
+
+                <RelativeLayout
+                    android:id="@+id/orderhistoryHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:background="#ffffff"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/backButton_layout"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true" >
+
+                        <ImageButton
+                            android:id="@+id/orderTicketbackButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/order_history_header_image_leftmargin"
+                            android:background="@drawable/backbtn"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <com.partyfinder.CustomView.CustomFontSemiBold
+                        android:id="@+id/upcomingeventheading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/MyOrder_headingOrderTicket"
+                        android:textColor="@color/layout_top_heading_color"
+                        android:textSize="@dimen/All_screen_header_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/order_history_divider_height"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/orderHistorydividercolor" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.90"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ListView
+                        android:id="@+id/orderTicketListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#232323"
+                        android:divider="@drawable/myprofiledivider"
+                        android:listSelector="#00000000"
+                        android:overScrollMode="never"
+                        android:paddingLeft="@dimen/order_history_listView_item_datetext_leftmargin"
+                        android:paddingRight="@dimen/order_history_listView_item_datetext_leftmargin"
+                        android:scrollbars="none"
+                        tools:listitem="@layout/order_ticket_details_listviewitem" >
+                    </ListView>
+
+                    <ProgressBar
+                        android:id="@+id/orderTicketProgressBar"
+                        android:layout_width="@dimen/hdpi_progressBar_height"
+                        android:layout_height="@dimen/hdpi_progressBar_height"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

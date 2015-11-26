@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headerLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:gravity="bottom"
+    android:minHeight="50dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <ImageView
+            android:id="@+id/headerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp" />
+
+        <ImageView
+            android:id="@+id/headerImageViewRotate"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/headerMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@android:color/black" />
+
+        <ProgressBar
+            android:id="@+id/headerProgressbar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:indeterminateDrawable="@drawable/custom_progressrrr" />
+    </RelativeLayout>
+
+</RelativeLayout>
+<!--
+    						<xml version="1.0" encoding="utf-8"?>
+							<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+							    android:layout_width="fill_parent"
+							    android:layout_height="wrap_content"
+							    android:background="#FF0000"
+							    android:minHeight="50dp"
+						  	    android:paddingBottom="15dp"
+							    android:paddingTop="15dp"
+							    android:gravity="center"
+							    android:id="@+id/headerLayout"
+							    	 >
+							
+							    <TextView
+							        android:id="@+id/headerMessage"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="Loading.........."
+							        android:textColor="@android:color/black" />
+							
+							</RelativeLayout>
+-->
+

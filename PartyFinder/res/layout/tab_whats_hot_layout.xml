@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layerType="hardware"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/frameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/White"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@dimen/weight_header" >
+
+                <LinearLayout
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:id="@+id/im_globeLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/im_globe"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/header_images_margin"
+                                android:src="@drawable/orderhistoryicon"
+                                android:visibility="visible" />
+                        </RelativeLayout>
+
+                        <com.partyfinder.CustomView.CustomFontSemiBold
+                            android:id="@+id/whatshotheading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/whats_hot_menu"
+                            android:textColor="@color/layout_top_heading_color"
+                            android:textSize="@dimen/All_screen_header_text_size" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.67"
+                android:layerType="hardware" >
+
+                <RelativeLayout
+                    android:id="@+id/carouselLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/carouselbg"
+                    android:gravity="center"
+                    android:layerType="hardware" >
+
+                    <ProgressBar
+                        android:id="@+id/whatshotProgressbar"
+                        android:layout_width="@dimen/hdpi_progressBar_height"
+                        android:layout_height="@dimen/hdpi_progressBar_height"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+                    <!-- android:indeterminateDrawable="@anim/custom_progressbbb -->
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/greenc"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.22"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/homeView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/WhatsHot_eventdate_Topmargin"
+                            android:gravity="center" >
+
+                            <com.partyfinder.CustomView.CustomFontBold
+                                android:id="@+id/whatsHoteventDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="#4db8a0"
+                                android:textSize="@dimen/whatshot_tab_dateText1_size" />
+
+                            <com.partyfinder.CustomView.CustomFontRegular
+                                android:id="@+id/whatsHoteventmonth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/whatsHoteventDate"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="2dp"
+                                android:textColor="#4db8a0"
+                                android:textSize="@dimen/whatshot_tab_dateText2_size" />
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/verticalDivider"
+                            android:layout_width="0.5dp"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:background="#D3D3D3" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/textLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/Whats_hot_textview_layout_left_margin" >
+
+                        <com.partyfinder.CustomView.CustomFontRegular
+                            android:id="@+id/whatsHotEventName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="#4d4d4d"
+                            android:textSize="@dimen/whatshot_eventname_textsize" />
+
+                        <com.partyfinder.CustomView.CustomFontSemiBold
+                            android:id="@+id/whatsHotClubName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/whatsHotEventName"
+                            android:layout_marginLeft="4dp"
+                            android:textColor="#a6a6a6"
+                            android:textSize="@dimen/whatshot_eventname1_textsize" />
+
+                        <RelativeLayout
+                            android:id="@+id/text3Layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/whatsHotClubName"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="@dimen/whatshot_eventname1_topmargin"
+                            android:gravity="center_vertical" >
+
+                            <com.partyfinder.CustomView.CustomFontRegular
+                                android:id="@+id/whatsHoLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_toRightOf="@+id/imageNav"
+                                android:singleLine="true"
+                                android:textColor="#83837d"
+                                android:textSize="@dimen/whatshot_eventname2_textsize" />
+
+                            <ImageView
+                                android:id="@+id/imageNav"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/whatsHoLocation"
+                                android:layout_alignParentLeft="true"
+                                android:src="@drawable/location" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/text4Layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/text3Layout"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="@dimen/whatshot_eventname1_topmargin"
+                            android:gravity="center_vertical" >
+
+                            <ImageView
+                                android:id="@+id/imageTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/time" />
+
+                            <com.partyfinder.CustomView.CustomFontRegular
+                                android:id="@+id/whatsHotTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_toRightOf="@+id/imageTime"
+                                android:textColor="#83837d"
+                                android:textSize="@dimen/whatshot_eventname2_textsize" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

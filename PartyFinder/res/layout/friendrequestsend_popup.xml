@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/orderRejectionPendingAlertPopUp_margins"
+        android:layout_marginRight="@dimen/orderRejectionPendingAlertPopUp_margins"
+        android:background="@drawable/rounded_corner_background"
+        android:gravity="center" >
+
+        <!-- <RelativeLayout
+            android:id="@+id/relativelayoutHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" >
+
+            <com.partyfinder.CustomView.CustomFontBold
+                android:id="@+id/textViewHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/orderRejectionPendingAlertPopUp_headerText_topmargin"
+                android:text="@string/MyOrderPopUp_heading"
+                android:textColor="#000000"
+                android:textSize="@dimen/orderRejectionPendingAlertPopUp_header_textSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/order_history_divider_height"
+                android:layout_below="@+id/textViewHeading"
+                android:layout_marginTop="@dimen/orderRejectionPendingAlertPopUp_headerText_topmargin"
+                android:background="@color/orderHistorydividercolor" >
+            </TextView>
+        </RelativeLayout> -->
+
+        <com.partyfinder.CustomView.CustomFontRegular
+            android:id="@+id/ordertransectionInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativelayoutHeader"
+            android:layout_centerHorizontal="true"
+    android:gravity="center"
+      android:textColor="@color/GrayHot"
+            android:padding="10dp"
+            android:text="@string/friendRequestSend_text"
+            android:textSize="@dimen/friendRequestSende_popUp_textSize" />
+
+        <TextView
+            android:id="@+id/ok_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_history_divider_height"
+            android:layout_below="@+id/ordertransectionInfo"
+            android:background="@color/orderHistorydividercolor" />
+
+        <com.partyfinder.CustomView.CustomButtonView
+            android:id="@+id/orderTransectionStatusButton"
+            android:layout_width="@dimen/orderRejectionPendingAlertPopUp_button_width"
+            android:layout_height="@dimen/orderRejectionPendingAlertPopUp_button_height"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/ok_divider"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:clickable="true"
+            android:textColor="#51A6F5"
+                 android:textStyle="bold" 
+            android:text="@string/MyOrderPopUp_OkButtonText"
+       />
+    </RelativeLayout>
+
+</RelativeLayout>

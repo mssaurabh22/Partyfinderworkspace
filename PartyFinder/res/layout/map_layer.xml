@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+        <RelativeLayout
+        android:id="@+id/mapLayer"
+        android:layout_below="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    
+        <ScrollView 
+            android:id="@+id/mapScrollView"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+              android:overScrollMode="never"
+            android:scrollbars="none" >
+        <HorizontalScrollView
+            android:id="@+id/horizontallscroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none" 
+            android:background="#ffffff">
+            
+             <RelativeLayout
+     
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+ 	
+            <RelativeLayout
+                android:id="@+id/dummyLayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+               >
+                <ImageView
+                    android:id="@+id/backgroundImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+            
+            
+            </RelativeLayout>
+        </HorizontalScrollView>
+        
+        </ScrollView>
+        
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+ <!--    <ProgressBar
+                    android:id="@+id/reserveTableProgbar"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone" /> -->

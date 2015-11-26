@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/frameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layerType="hardware" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@dimen/weight_header" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" >
+
+                    <RelativeLayout
+                        android:id="@+id/order_history_icon_Layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@+id/order_history_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/header_images_margin"
+                            android:src="@drawable/orderhistoryicon"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <com.partyfinder.CustomView.CustomFontSemiBold
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/activityfeed"
+                        android:textColor="@color/layout_top_heading_color"
+                        android:textSize="@dimen/All_screen_header_text_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvv"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#b2b2b2" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.89" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff" >
+
+                    <ProgressBar
+                        android:id="@+id/proBar_activityfeed"
+                        android:layout_width="@dimen/hdpi_progressBar_height"
+                        android:layout_height="@dimen/hdpi_progressBar_height"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+                    <!-- android:indeterminateDrawable="@anim/custom_progressrrr" /> -->
+
+        <!--             <eu.erikw.PullToRefreshListView -->
+                                       <com.costum.android.widget.PullAndLoadListView
+                        android:id="@+id/activity_feed_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@drawable/eventsdivider"
+                        android:overScrollMode="never"
+                        android:scrollbars="vertical"
+                        tools:listitem="@layout/circle_image_item_forall_layout" />
+
+                    <!--
+                                   <pt.fjss.pulltoupdatelibrary.PullToUpdateListView
+                         
+                        android:id="@+id/activity_feed_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@drawable/eventsdivider"
+                        android:overScrollMode="never"
+                        android:scrollbars="vertical"
+                        tools:listitem="@layout/circle_image_item_forall_layout" />
+                    -->
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

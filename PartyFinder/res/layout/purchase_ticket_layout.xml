@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.partyfinder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.67" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.155"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:id="@+id/header_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/bottam_tab_hight"
+                                android:layout_alignParentTop="true"
+                                android:background="#ffffff" >
+
+                                <RelativeLayout
+                                    android:id="@+id/backButton_layout"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentLeft="true" >
+
+                                    <ImageButton
+                                        android:id="@+id/table_back_btn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/order_history_header_image_leftmargin"
+                                        android:background="#ffffff"
+                                        android:gravity="center"
+                                        android:src="@drawable/addback" />
+                                    <!-- android:layout_marginBottom="16px" -->
+                                </RelativeLayout>
+
+                                <com.partyfinder.CustomView.CustomFontSemiBold
+                                    android:id="@+id/header"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="Comprar Mesa"
+                                    android:textColor="@color/layout_top_heading_color"
+                                    android:textSize="@dimen/All_screen_header_text_size"
+                                    android:textStyle="bold" />
+
+                                <RelativeLayout
+                                    android:id="@+id/forwardButton_layout"
+                                    android:layout_width="80dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true" >
+
+                                    <ImageButton
+                                        android:id="@+id/table_forward_btn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginBottom="16px"
+                                        android:layout_marginRight="@dimen/order_history_header_image_leftmargin"
+                                        android:background="#ffffff"
+                                        android:src="@drawable/forward" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="#b2b2b2" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.85"
+                            android:orientation="vertical" >
+
+                            <!-- tools:context="com.partyfinder.ReserveTableActivity" -->
+
+                            <RelativeLayout
+                                android:id="@+id/tableLayer"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/header_layout" >
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/reserveTableProgressBar"
+                        android:layout_width="@dimen/hdpi_progressBar_height"
+                        android:layout_height="@dimen/hdpi_progressBar_height"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.34"
+                android:background="#000000" >
+
+                <RelativeLayout
+                    android:id="@+id/tableLayer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tableLayer" >
+
+                    <Gallery
+                        android:id="@+id/mygallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <!--
+                         <main.java.it.sephiroth.android.library.widget.HListView
+                    android:id="@+id/mygallery"
+              android:divider="#000000"
+              app:hlv_dividerWidth="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                    -->
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

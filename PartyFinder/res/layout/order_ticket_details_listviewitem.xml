@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+        
+       <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+    
+        
+      
+        android:weightSum="1">
+    <LinearLayout 
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+           android:layout_weight="0.12"
+        android:paddingBottom="10dp"
+        android:weightSum="1">
+        
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+           >
+            
+             <com.partyfinder.CustomView.CustomFontRegular
+            android:id="@+id/ticketEventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+
+            android:text="Jan.28"
+            android:textColor="#F2F2F2"
+            android:textSize="@dimen/order_history_listView_item_text_TextSize" />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.55"
+            android:gravity="center_vertical">
+              
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:orientation="vertical" >
+
+            <com.partyfinder.CustomView.CustomFontRegular
+                android:id="@+id/ticketType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             
+                android:text="Pista Male"
+                android:textColor="@color/RedpartyFinderRed"
+                android:textSize="@dimen/order_history_listView_item_text_TextSize" />
+
+            <com.partyfinder.CustomView.CustomFontRegular
+                android:id="@+id/ticketEventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Woods"
+                android:textColor="#BFBFBF"
+                
+                android:layout_marginTop="@dimen/orderTransectionDetailEventName_top"
+                android:textSize="@dimen/order_history_listView_item_text_TextSize" />
+        </LinearLayout>
+            
+          
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.20"
+            android:gravity="center">
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+               
+               
+                android:orientation="horizontal" >
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/orderTicket_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/order_history_listView_item_text_TextSize" />
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/ticketCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1200"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/order_history_listView_item_text_TextSize" />
+            </LinearLayout>
+
+            <com.partyfinder.CustomView.CustomFontRegular
+                android:id="@+id/ticketConsumption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/orderTransectionDetailEventName_top"
+                android:text="1/2"
+               android:layout_marginLeft="@dimen/ticket_quantitytext_leftmargin"
+                android:textColor="@color/White"
+                android:textSize="@dimen/order_history_listView_item_text_TextSize" />
+
+        </LinearLayout>
+             
+            
+         
+        </LinearLayout>
+        
+        </LinearLayout>
+        
+    </LinearLayout>
+    </RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ptr_headerContainer"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true" >
+
+    <RelativeLayout
+        android:id="@+id/ptr_id_header"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+           android:paddingBottom="20dip"
+    android:paddingTop="20dip" >
+
+        <ImageView
+            android:id="@+id/ptr_id_image"
+            style="@style/ptr_arrow" />
+
+        <ProgressBar
+            android:id="@+id/ptr_id_spinner"
+            android:layout_width="25dp"
+        android:layout_height="25dp"
+              android:indeterminateDrawable="@drawable/custom_progressrrr"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/ptr_id_textwrapper"
+            style="@style/ptr_textwrapper" >
+
+            <TextView
+                android:id="@+id/ptr_id_text"
+                style="@style/ptr_text" />
+
+            <TextView
+                android:id="@+id/ptr_id_last_updated"
+                style="@style/ptr_last_updated" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+ >
+
+    <RelativeLayout
+        android:id="@+id/infoWindowLayout"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+          android:background="@drawable/infowindowframe" 
+        android:layout_centerHorizontal="true" >
+        <!-- android:background="@drawable/circle_view_layout" -->
+
+        <com.partyfinder.CustomView.CustomFontSemiBold
+            android:id="@+id/eventdate_map"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/eventNameMap"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/imagebg"
+            android:gravity="center"
+         android:layout_marginTop="7dp"
+            android:text="aaa"
+            android:textColor="#42b49a"
+            android:textSize="10px" />
+
+        <ImageView
+            android:id="@+id/arrowImageMap"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/eventNameMap"
+            android:layout_marginRight="12dp"
+               android:layout_marginTop="9dp"
+            android:background="@drawable/forward" />
+
+        <TextView
+            android:id="@+id/clubNameMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/eventNameMap"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="mmmmmmmmm"
+            android:textColor="#000000"
+            android:textSize="17px" />
+
+        <TextView
+            android:id="@+id/eventNameMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/clubNameMap"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/eventdate_map"
+            android:gravity="center"
+            android:text="mmmmmmmmm"
+            android:textColor="#000000"
+            android:textSize="23px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

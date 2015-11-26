@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+      
+         android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" 
+           >
+
+            <com.partyfinder.CustomView.CustomTextView
+                android:id="@+id/textViewHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/recommendlist"
+                android:textColor="#262525"
+                android:textSize="16dp" />
+
+            <com.partyfinder.CustomView.CustomFontLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewHeading"
+                android:textSize="12sp"
+                android:padding="5dp"
+                  android:textColor="#262525"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+              
+                android:text="@string/hitplsebtntoaddfriend"
+                 />
+        </RelativeLayout>
+  <!--       <TextView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+       android:layout_below="@+id/relativelayoutHeader"
+        android:background="#e74f64" /> -->
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutText"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/relativelayoutHeader"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" >
+
+            <!-- <com.partyfinderCheckin.Custom.CustomEditText -->
+            <ProgressBar 
+                android:id="@+id/recommendDialogProgressBar"
+                android:layout_width="@dimen/hdpi_progressBar_height"
+                android:layout_height="@dimen/hdpi_progressBar_height"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+            
+            <ListView 
+                
+                android:id="@+id/recommendList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:listSelector="#00000000"
+                android:overScrollMode="never"
+          android:paddingLeft="5dp"
+          android:paddingRight="5dp"
+            android:divider="#00000000"
+                 tools:listitem="@layout/customdialog_recommend_textview">
+         
+            </ListView>
+
+            <!-- <TextView android:id="@+id/recommendFrndText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:visibility="gone"/> -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutEdt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativelayoutText"
+            android:layout_marginTop="13dp" >
+
+            <!-- <EditText
+                android:id="@+id/passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:textStyle="italic" /> -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativelayoutEdt"
+            android:padding="5dp">
+
+           
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1" 
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.47" >
+
+                <Button
+                    android:id="@+id/recommendPlus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                     
+                        android:gravity="center"
+                        android:background="@color/button_background_color"
+                        android:text="+"
+                        android:textColor="#ffffff"
+                     android:layout_marginRight="10dp"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+          
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.47" >
+
+                <Button
+                    	android:id="@+id/recoomendSend"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/button_background_color"
+                        android:text="@string/send"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+            
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

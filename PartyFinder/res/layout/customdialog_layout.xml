@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" 
+           >
+
+            <com.partyfinder.CustomView.CustomFontSemiBold
+                 android:textColor="#262525"
+                android:textSize="16dp" 
+                android:id="@+id/textViewHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/guestlist"
+                     />
+
+            <com.partyfinder.CustomView.CustomFontLight
+                    android:padding="10dp"
+                       android:textSize="12sp"
+                           android:textColor="#262525"
+            
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewHeading"
+                   
+                android:textStyle="normal"
+                android:gravity="center"
+               
+                android:text="@string/hitplsebtntoaddfriend"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutText"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/relativelayoutHeader"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" >
+
+            <!-- <com.partyfinderCheckin.Custom.CustomEditText -->
+
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutEdt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativelayoutText"
+            android:layout_marginTop="13dp" >
+
+            <!-- <EditText
+                android:id="@+id/passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:textStyle="italic" /> -->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativelayoutEdt"
+            android:padding="5dp">
+
+           
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:weightSum="1" 
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.48" >
+
+                <Button
+                    android:id="@+id/deActivate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/button_background_color"
+                        android:text="+"
+                        android:textColor="#ffffff"
+                     android:layout_marginRight="10dp"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+          
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.48" >
+
+                <Button
+                    	android:id="@+id/cancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/button_background_color"
+                        android:text="@string/send"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

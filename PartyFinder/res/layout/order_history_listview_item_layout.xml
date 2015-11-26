@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+        
+       <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+    
+        
+      
+        android:weightSum="1">
+    <LinearLayout 
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+           android:layout_weight="0.12"
+    
+        android:weightSum="1">
+        
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+  >
+            
+             <com.partyfinder.CustomView.CustomFontRegular
+            android:id="@+id/orderTransectionDetailEventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            
+          
+            android:text="Aud.24"
+            android:textSize="@dimen/order_history_listView_item_text_TextSize" />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.48"
+            android:gravity="center_vertical">
+              
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          
+            android:orientation="vertical" >
+
+         <com.partyfinder.CustomView.CustomFontRegular
+            android:id="@+id/orderTransectionDetailOrderCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         
+            android:text="Order #123456"
+            android:textColor="@color/RedpartyFinderRed"
+            android:textSize="@dimen/order_history_listView_item_text_TextSize" />
+            <com.partyfinder.CustomView.CustomFontRegular
+            android:id="@+id/orderTransectionDetailEventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         
+            android:text="Villa Mix"
+            android:textSize="@dimen/order_history_listView_item_confirmtext_TextSize" />
+        </LinearLayout>
+            
+          
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.27"
+            android:gravity="right"
+            android:orientation="vertical">
+  
+
+              <LinearLayout
+            android:id="@+id/ticketCostTextLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+        
+           
+            android:orientation="horizontal" >
+
+            <com.partyfinder.CustomView.CustomFontRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$"
+                android:textColor="@color/White"
+                android:textSize="@dimen/order_history_listView_item_text_TextSize" />
+
+            <com.partyfinder.CustomView.CustomFontRegular
+                android:id="@+id/orderTransectionDetailOrderCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 55.5"
+                android:textColor="@color/White"
+                android:textSize="@dimen/order_history_listView_item_text_TextSize" />
+        </LinearLayout>
+
+            <com.partyfinder.CustomView.CustomFontRegular
+            android:id="@+id/orderTransectionDetailOrderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ticketCostTextLayout"
+           android:gravity="right"
+            
+        
+            android:textSize="@dimen/order_history_listView_item_confirmtext_TextSize" />
+
+             
+            
+         
+        </LinearLayout>
+        
+        </LinearLayout>
+        
+    </LinearLayout>
+    </RelativeLayout>

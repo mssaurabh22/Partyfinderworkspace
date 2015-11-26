@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+               
+
+              >
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/orderSummaryTicketType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Table #3"
+                    android:textColor="@color/listview_edittext1_text_colour"
+                    android:textSize="@dimen/order_history_listView_item_text_TextSize" />
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textColor="@color/listview_edittext2_text_colour"
+                    android:textSize="@dimen/listview_edittext2_size"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+      
+                android:paddingBottom="10dp"
+                android:paddingTop="2dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+               >
+
+                        <com.partyfinder.CustomView.CustomFontRegular
+                            android:id="@+id/orderSummaryTicketprice"
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="$2000.00"
+                            android:textColor="@color/listview_edittext3_text_colour"
+                            android:textSize="@dimen/order_history_listView_item_text_TextSize" />
+
+                     
+                    </LinearLayout>
+                </RelativeLayout>
+                        <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                   <com.partyfinder.CustomView.CustomFontRegular
+                            android:id="@+id/orderSummaryTicketQuantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="Qty:3 "
+                            android:gravity="left"
+                            android:textColor="@color/listview_edittext4_text_colour"
+                            android:textSize="@dimen/order_history_listView_item_text1_TextSize" />
+                                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

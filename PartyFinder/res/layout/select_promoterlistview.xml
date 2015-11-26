@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/selectpromoter_listview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/user_image_layout"
+            android:layout_width="@dimen/circularImageView_forAll_layout_Imageheight"
+            android:layout_height="@dimen/circularImageView_forAll_layout_Imageheight"
+            android:layout_centerVertical="true"
+            android:padding="5dp" >
+
+            <com.partyfinder.CustomView.ImageViewRounded
+                android:id="@+id/promoterImage"
+                android:layout_width="@dimen/circularImageView_forAll_layout_Imageheight"
+                android:layout_height="@dimen/circularImageView_forAll_layout_Imageheight"
+                android:layout_centerVertical="true"
+                android:padding="5dp"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/promoterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/selectpromoter_listview_text_leftmargin"
+            android:layout_toRightOf="@+id/user_image_layout"
+            android:text="Promoter Name"
+            android:textColor="#01DF01" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/popup_listview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#00000000" >
+
+        <Button
+            android:id="@+id/existingCardCancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundedcorner_for_usecurrent_card_cancel"
+            android:gravity="center"
+            android:text="Cancelar"
+            android:textColor="#0040FF"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/exisitingCardList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/existingCardCancel"
+            android:background="#00000000"
+            android:divider="#00000000"
+            android:listSelector="#00000000"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            tools:listitem="@layout/existingcard_popuplistview" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

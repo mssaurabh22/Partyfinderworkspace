@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--     Defult Screen Size -->
+<!--     <dimen name="bottam_tab_hight">50dp</dimen> -->
+<!--     <dimen name="margin_left">31dp</dimen> -->
+<!--     <dimen name="margin_right">31dp</dimen> -->
+<!--     <dimen name="button_height">40dp</dimen> -->
+<!--     <dimen name="margin_left_for_homeLogin">10dp</dimen> -->
+<!--     <dimen name="margin_right_for_homesignup">10dp</dimen> -->
+<!--     <dimen name="layout_top_width">60dp</dimen> -->
+<!--     <dimen name="layout_top_Heading">17dp</dimen> -->
+<!--     <dimen name="margin_left_forfacebook">10dp</dimen> -->
+<!--     <dimen name="margin_right_forfacebook">17dp</dimen> -->
+<!--     <dimen name="margin_top_for_login_edittext">20dp</dimen> -->
+<!--     <dimen name="padding_left_edittext">10dp</dimen> -->
+<!--     <dimen name="padding_right_edittext">10dp</dimen> -->
+<!--     <dimen name="margin_right_forfacebooksignup">60dp</dimen> -->
+<!--     <dimen name="margin_left_forfacebooksignup">50dp</dimen> -->
+<!--     <dimen name="frag_bottam_bar">15dp</dimen> -->
+<!--     <dimen name="padding_im_4_tab">7dp</dimen> -->
+    
+
+   
+<!--       Home Screen dimensions dimensions -->
+     
+<!--       <dimen name="logo_marginTop">172px</dimen> -->
+<!--       <dimen name="fb_button_marginTop">88px</dimen> -->
+<!--       <dimen name="fb_button_textSize">19px</dimen> -->
+<!--       <dimen name="singup_marginBottam">25px</dimen> -->
+<!--       <dimen name="singup_marginLeft">28px</dimen> -->
+<!--       <dimen name="login_btn_marginBottam">25px</dimen> -->
+<!--       <dimen name="login_btn_marginRight">28px</dimen> -->
+      
+<!--         SignUp Screen dimensions -->
+    
+<!--      <dimen name="signup_headerHieght">77px</dimen> -->
+<!--      <dimen name="singup_backBtn_leftMargin">23px</dimen> -->
+<!--      <dimen name="singup_heading_textSize">24px</dimen> -->
+<!--      <dimen name="singup_left_right_margin">26px</dimen> -->
+<!--      <dimen name="singup_editText_topMargin_from_heading">35px</dimen> -->
+<!--      <dimen name="singup_editText_textSize">18px</dimen> -->
+<!--      <dimen name="singup_editText_leftPadding">10px</dimen> -->
+<!--      <dimen name="singup_editText_topMargin_one_to_sec">25px</dimen> -->
+<!--      <dimen name="singup_registerBtn_BottomMargin">5px</dimen> -->
+<!--       <dimen name="singup_registerBtn_topMargin">31px</dimen> -->
+<!--       <dimen name="singup_registerBtn_textSize">18px</dimen> -->
+      
+<!--        Login Screen dimensions -->
+<!--       <dimen name="login_forgetBtn_BottomMargin">20px</dimen> -->
+<!--        <dimen name="login_forgetBtn_TextSize">20px</dimen> -->
+       
+       
+<!--          Activity Feed dimensions -->
+
+<!--     <dimen name="Activity_feed_image_left_margin">12px</dimen> -->
+<!--     <dimen name="Activity_feed_layout_height">125px</dimen> -->
+<!--     <dimen name="Activity_feed_text2_right_margin">22px</dimen> -->
+<!--     <dimen name="Activity_feed_text1_left_margin">19px</dimen> -->
+<!--     <dimen name="Activity_feed_text1_size">19px</dimen> -->
+<!--     <dimen name="Activity_feed_text2_size">17px</dimen> -->
+<!--     <dimen name=""></dimen> -->
+<!--     <dimen name=""></dimen> -->
+
+
+<!--     Whats Hot dimensions -->
+
+<!--     <dimen name="Whats_hot_carousel_layout_height">490px</dimen>  470 -->
+<!--     <dimen name="Whats_hot_date_text_height">146px</dimen> -->
+<!--     <dimen name="Whats_hot_date_text_width">150px</dimen> -->
+<!--         <dimen name="Whats_hot_date_text1_size">42px</dimen> -->
+<!--             <dimen name="Whats_hot_date_text2_size">18px</dimen> -->
+<!--     <dimen name="Whats_hot_text1_top_margin">21px</dimen> -->
+<!--     <dimen name="Whats_hot_text1_size">23px</dimen> -->
+<!--     <dimen name="Whats_hot_text2_top_margin">8px</dimen> -->
+<!--     <dimen name="Whats_hot_text2_size">16px</dimen> -->
+<!--     <dimen name="Whats_hot_textview_layout_left_margin">32px</dimen> -->
+<!--     <dimen name="All_screen_header_height">77px</dimen> -->
+<!--     <dimen name="All_screen_header_text_size">24px</dimen> -->
+       
+
+     <item name="weight_header" format="float" type="dimen">0.11</item>
+</resources>

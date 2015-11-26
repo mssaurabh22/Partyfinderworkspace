@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Party Finder</string>
+    <string name="swipe">Swipe from left to right</string>
+    <string name="menu_settings">Settings</string>
+    <string name="main_menu">Menu</string>
+    <string name="activity_feed_menu">Atividades</string>
+    <string name="whats_hot_menu">Destaques</string>
+    <string name="upcoming_menu">Eventos</string>
+    <string name="upcoming_event">Upcoming Events</string>
+    
+    <string name="facebook_app_id">927894000560326</string> <!-- 316675358541949 -->
+   
+   <!--  <string name="facebook_app_id">927894000560326   897984943587579
+    </string>
+    812121132159168 -->
+
+    <string name="Privacy_policy_text1">Termos de uso e Política de Privacidade do aplicativo Party Finder.</string>
+    <string name="beforsendguest">Por favor, adicione nomes antes de enviar a lista.</string>
+    <string name="guestlistpopupheading">Aperte o "+" para adicionar mais campos</string>
+    <string name="Privacy_policy_text2">Os presentes termos e condições gerais aplicam-se ao uso dos serviços prestados pelo Aplicativo Party Finder, de propriedade da PF Tecnologia e Entretenimento Ltda. (doravante denominada “Party Finder”), que está disponível gratuitamente para plataforma iOS na Apple Store, loja de aplicativos da Apple Inc (Apple Store e iOS são marcas registradas da Apple Inc).
+
+\n\nQualquer pessoa, doravante nominada Usuário, que pretenda utilizar os serviços do Aplicativo Party Finder, deverá aceitar os Termos de Uso e Condições Gerais e todas as demais políticas e princípios que o regem, condição esta absolutamente indispensável à utilização do Aplicativo.
+\n\n
+1. Descrição. O Aplicativo é uma ferramenta interativa informacional onde os usuários buscarão informações atualizadas sobre a agenda de eventos dos seus parceiros. O Aplicativo foi desenvolvido pela equipe do Party Finder e tem como intuito facilitar, através de um QR Code, o acesso dos usuários a eventos em geral, incluindo casas noturnas, bares, festas, restaurantes, shows, entre outros.
+\n\n
+2. O Usuário será o responsável por todas as atividades decorrentes e atos praticados pelo seu uso do Aplicativo.
+\n\n
+3. O Party Finder, bem como a Divulgadora, seus  representantes, agentes e funcionários não se responsabilizam por queixas de terceiros causadas pelo mau uso do Aplicativo, incluindo qualquer responsabilidade ou despesa proveniente de queixas, perdas, danos (diretos e consequentes), ações judiciais, sentenças, despesas processuais ou honorários de qualquer tipo e natureza, assumindo o Usuário geral e total responsabilidade pelos atos praticados.
+\n\n
+4. Com efeito, o Party Finder e a Divulgadora se isentam de qualquer responsabilidade sobre os atos dos indivíduos retratados nas imagens do Aplicativo, bem como sobre o mau uso do Aplicativo pelos Usuários.
+\n\n
+5. O Party Finder e a Divulgadora também reservam o direito de modificar, suspender ou encerrar o uso do Aplicativo, com ou sem aviso prévio, a qualquer momento e sem ter de se responsabilizar por quaisquer consequências.
+\n\n
+6. O Usuário concorda em se responsabilizar por seu próprio uso do Aplicativo, por quaisquer marcações que fizer e por quaisquer consequências delas. O Usuário concorda em utilizar o Aplicativo de acordo com todas as leis, normas e regulamentos locais, estaduais, nacionais e internacionais.
+\n\n
+7. Este aplicativo possui caráter meramente informativo, não havendo qualquer submissão do Usuário a quaisquer obrigações que não as descritas no presente termo e impostas pela legislação em vigor. Também não implica na obrigação do Party Finder e da Divulgadora em quaisquer outras obrigações que não as descritas neste termo e impostas por nossa legislação incluindo, entre elas, isenção sob obrigação de o QR Code estar ativo, bem como, de o estabelecimento garantir a entrada do usuário.
+\n\n
+8. O Aplicativo opera de forma integrada ao site de relacionamentos FACEBOOK e sua utilização também está condicionada à observância dos próprios termos de uso definidos pelo site de relacionamentos.
+\n\n
+9. Do mesmo modo, constitui ilícito civil e penal a criação de perfis falsos, associados ou não a indivíduos reais, com a finalidade de utilizar o Aplicativo e associar indevidamente as imagens disponibilizadas a esses perfis falsos.
+\n\n
+10. O Usuário compromete-se a notificar o Party Finder, pelo e-mail contato@partyfinder.com.br, imediatamente e através de meio seguro, a respeito de qualquer uso não autorizado de sua conta, bem como o acesso não autorizado por terceiros à mesma. O Usuário será o único responsável pelas operações efetuadas em sua conta, uma vez que o acesso à mesma só será possível mediante a aposição da senha, cujo conhecimento é exclusivo do Usuário.
+\n\n
+11. Para utilizar o Aplicativo, o Usuário deverá concordar com o Termo de Uso, o que ocorrerá através do clique para aceitar ou concordar com o Termo.
+\n\n
+12.  Os serviços do Aplicativo estão disponíveis apenas para as pessoas que tenham capacidade legal para contratá-los. Não podem utilizá-los, assim, pessoas que não gozem dessa capacidade, inclusive menores de idade, ficando, desde já, o Usuário advertido das sanções legais do Código Civil, notadamente as dos Artigos 166, I e 171, I, bem como do Artigo 180 da lei nº 10.406/02.
+\n\n
+13. Para todos os efeitos, o Usuário declara ser maior de 18 (dezoito) anos na data da aceitação deste Termo.
+\n\n
+14. O Usuário terá o prazo de 7 dias corridos, conforme o Art. 49 do Código de Defesa do Consumidor, para desistir da compra realizada. Por nossa política, isso não poderá ocorrer caso o evento aconteça em um período menor ou igual a 48 horas do processamento da ordem. O estorno é do valor do ingresso, não incluindo a taxa de conveniência, uma vez que o serviço foi prestado independentemente da desistência do Usuário.
+\n\n
+15. O Party Finder e a Divulgadora se reservam ao direito de desfocar ou remover qualquer trecho de imagem que considerem impróprios aos objetivos recreativos deste Aplicativo. As imagens veiculadas ao Aplicativo pelo Usuário não poderão conter, em nenhuma hipótese, conteúdos pornográficos, uso de armas de fogo, uso de narcóticos, violência, cenas de sexo, pedofilia, e/ou qualquer conteúdo protegido ou proibido por lei.
+\n\n
+16.  Ao utilizar o Aplicativo o usuário concorda que as imagens exibidas são captadas em evento público, sem qualquer contexto ou conduta que possa ser considerada como invasão de privacidade, tampouco que implique em necessidade de autorização prévia ou na aquisição de direitos decorrentes.
+\n\n
+17. Embora o Usuário concorde e reconheça que as imagens exibidas no aplicativo foram captadas em evento público, o mesmo poderá solicitar a desfocagem adicional de seu rosto ou a remoção de imagens (ou seus trechos) que revelem conteúdo por ele considerado impróprio, através do e-mail contato@partyfinder.com.br.
+\n\n
+18. Os usuários do Aplicativo somente deverão marcar a si próprios, diante da identificação de suas imagens individuais no contexto das imagens do evento exibidas pelo Aplicativo.
+\n\n
+19. O Usuário será responsável por qualquer uso inadequado do mecanismo de marcação de fotos, incluindo aqueles passíveis de implicações penais, tais como falsidade ideológica (ao associarem imagem de outro individuo ao seu usuário) dentre outros.
+\n\n
+20. O QR Code que garante o acesso do Usuário ao evento é gerado no momento da consumação da compra, podendo ser transferido pelo Usuário a terceiros somente pelo próprio ambiente do Aplicativo. A efetiva entrada do Usuário no evento adquirido somente se dará caso o QR Code gerado esteja atrelado à sua conta do Party Finder e e-mail cadastrado no Aplicativo. O Party Finder não se responsabiliza pela perda, extravio, furto ou roubo de aparelhos e/ou documentos que tenham acesso aos QR Codes do Usuário.   
+\n\n
+21. A notícia de violação de qualquer item do presente Termo de Uso, ou de outros dispositivos legais de nosso ordenamento jurídico que venham causar prejuízos ou riscos ao Party Finder, a Divulgadora ou a terceiros poderá acarretar na exclusão do Usuário à utilização do Aplicativo e sujeitá-lo a penalidades civis e penais cabíveis, além de outras consequências legais.
+\n\n
+22. O Party Finder e a Divulgadora reservam o direito, mas não terão qualquer obrigação, de investigar e fiscalizar a utilização do Aplicativo para determinar e identificar tais usos inadequados.
+\n\n
+23. O Party Finder não detém responsabilidade pela lotação do evento bem como o tempo de atendimento e garantia de ingressar no mesmo, tampouco se responsabiliza por possíveis cancelamentos ou alterações nas informações de algum evento. As medidas a serem tomadas e a responsabilidade são de total responsabilidade da produtora do evento conforme contrato firmado entre as partes envolvidas.
+\n\n
+24. Os Usuários poderão denunciar tais usos inadequados a fim de que o Party Finder e a Divulgadora possam adotar as providências que entenderem cabíveis após a devida apuração.
+\n\n
+25. O Party Finder poderá alterar, a qualquer tempo, estes Termos e Condições Gerais, visando seu aprimoramento e melhoria dos serviços prestados. Os novos Termos e Condições entrarão em vigor imediatamente após publicados no site.</string>
+    <string name="friendRequestSend_text">Solicitação de amizade enviada.</string>
+    <string name="friendDeleted_text">Amigo deletado da sua lista.</string>
+
+    <!-- MyOrderString -->
+
+    <string name="MyOrder_faceShareButton">Postar no Facebook</string>
+    <string name="MyOrder_AddpassbookButton">Adicionar à caderneta</string>
+    <string name="MyOrder_yourOdrerText">Sua ordem</string>
+    <string name="MyOrder_headingConfermation">Confirmação</string>
+    <string name="MyOrder_headingOrderTicket">Meus Ingressos</string>
+    <string name="MyOrderPopUp_heading">Status da Transação</string>
+    <string name="MyOrderPopUp_textContent">Transação for rejeitada ou não aprovado ...</string>
+    <string name="MyOrderPopUp_OkButtonText">OK</string>
+    <string name="mySettingg_facebookText">Conectar usando Facebook e encontrar todos os seus amigos que amam partido localizador como a você</string>
+    <string name="Already_Register">Você já está cadastrado no Party Finder. Por favor, vá para seção de login.</string>
+    <string name="my_profile_deleteFriend">Deleting friend.....</string>
+    <string name="my_profile_sendingFriendRequest">Sending friend request.....</string>
+    <string name="usercreditcarddetail_heading">Cartões de Crédito</string>
+
+    <!-- SignUp -->
+
+    <string name="Register">Registre-se</string>
+    <string name="name">Nome</string>
+    <string name="maleFemale">Masc/Fem</string>
+    <string name="email">E-mail</string>
+    <string name="confirmMail">Confirme o e-mail</string>
+    <string name="signUp">Cadastre-se</string>
+    <string name="password">Senha</string>
+    <string name="confirmPassword">Confirme a senha</string>
+
+    <!-- login -->
+    <string name="login">Login</string>
+    <string name=" UserName">Nome de usuário</string>
+    <string name="forgotPassword">Esqueceu a senha ?</string>
+    <string name="send">Enviar</string>
+
+    <!-- mainMenu -->
+
+    <string name="Home">Home</string>
+    <string name="Recommend">Recomendações</string>
+    <string name="Events">Eventos</string>
+    <string name="Favourites">Favoritos</string>
+    <string name="Friends">Amigos</string>
+    <string name="Venues">Casas</string>
+    <string name="myOrders">Ordens</string>
+    <string name="location">Localização</string>
+    <string name="viewAgenda">Ver Agenda</string>
+    <string name="Age">Idade</string>
+    <string name="signOut">Sair</string>
+
+    <!-- profile -->
+    <string name="profile">Meu Perfil</string>
+    <string name="setting">Configurações</string>
+    <string name="billingInformation">Informações Pessoais</string>
+    <string name="fullname">Nome Completo</string>
+    <string name="dateOfBirth">Age(dd/mm/yyyy)</string>
+    <string name="address">Endereço</string>
+    <string name="country">País</string>
+    <string name="city">Cidade</string>
+    <string name="state">Estado</string>
+    <string name="saveInformation">Salvar Informações</string>
+    <string name="privacyPolicy">Política de Privacidade</string>
+    <string name="cerditCards">Cartões de Crédito</string>
+
+    <!-- Activity feed -->
+
+    <string name="activityfeed">Atividades</string>
+    <string name="Convence_fees">Taxa de Conveniência (10%)</string>
+    <string name="upcomingEvent">Eventos</string>
+    <string name="venuesDetail">Detalhes da Casa</string>
+    <string name="ordersummry">Resumo da Ordem</string>
+    <string name="useCurrentCard">Usar Cartão Registrado</string>
+    <string name="AddnewCard">Adicionar Novo Cartão</string>
+    <string name="confermation">Confirmação</string>
+    <string name="Date">Data do evento</string>
+    <string name="Tickets">Ingressos#</string>
+    <string name="Consuption">Consumação</string>
+    <string name="price">Total</string>
+    <string name="pistamalewoods">Pista Male at Woods</string>
+    <string name="mytickets">Meu Ingressos</string>
+    <string name="myorder">Meus Ingressos</string>
+    <string name="eventdetail">Detalhes do Evento</string>
+    <string name="guestlist">Lista</string>
+    <string name="recommendlist">Recomendar</string>
+    <string name="purchaseTicket">Comprar Ingressos</string>
+    <string name="reserveTable">Comprar Mesa</string>
+    <string name="back">Voltar</string>
+    <string name="hitplsebtntoaddfriend">Aperte o "+" e selecione os amigos</string>
+    <string name="confirm">Confirmar!</string>
+    <string name="areUsuretodelete">Tem certeza de que deseja excluir?</string>
+    <string name="no">Não</string>
+    <string name="yes">Sim</string>
+    <string name="delete">Excluir</string>
+    <string name="addticket">Adicionar Ingressos</string>
+
+    <!-- ADD NEW CARD STRING -->
+    
+<!--     <string name="card_register_layout_subHeading">Adicione um novo cartão para  agilizar o processo de checkout</string> -->
+    
+       <string name="card_register_layout_subHeading">Utlize os dados do titular do Cartão de Crédito</string>
+    <string name="card_register_layout_Heading">Informações de Pagamento</string>
+    <string name="card_register_layout_EditText1">Nome de usuário</string>
+    <string name="card_register_layout_EditText2">Cartão de Crédito</string>
+    <string name="card_register_layout_EditText4">CPF</string>
+        <string name="card_register_layout_EditText5">Aniversário</string>
+            <string name="card_register_layout_EditText6">Telefone</string>
+    <string name="card_register_layout_EditText3">Código de Segurança</string>
+    <string name="card_register_layout_SaveButtonTxt">Salvar Informações</string>
+    <string name="card_alreadyAdded">Cartão já adicionado.</string>
+    <string name="card_added">Cartão adicionado com sucesso.</string>
+    <string name="card_not_added">Você não possui nenhum cartão registrado conosco.</string>
+    <string name="addTicketToMakePurchase">Selecione um ingresso para fazer a compra.</string>
+    <string name="card_security_msg">Por favor, forneça o código de segurança deste Cartão de Crédito</string>
+    <string name="incorrect_securitycode">Código incorreto</string>
+    <string name="creadit_card_empty_msg">Por favor, infome o número do seu cartão de crédito</string>
+    <string name="creadit_cardname_empty_msg">Por favor, informe seu nome.</string>
+    <string name="invalid_card">Numério de cartão inválido.</string>
+    <string name="empty_security_code_msg">Por favor, infome o código de segurança. Ex: 123</string>
+    <string name="card_expiry_msg">Por favor, infome a data de expiração do cartão.</string>
+
+    <!-- Confirm Order -->
+    <string name="finilize_order">Finalizar Ordem</string>
+    <string name="order_confirm">Confirmação</string>
+
+    <!-- SELECT PROMOTER -->
+    <string name="select_promoter">Selecione o Promoter</string>
+    <string name="whoPromotedU">Quem te promoveu o evento?</string>
+    <string name="sorryDialo">Info</string>
+
+    <!-- confirm order -->
+    <string name="your_order">Sua Ordem</string>
+    <string name="order">Ordem #</string>
+    <string name="id">ID #</string>
+    <string name="errorDialog">Erro</string>
+    <string name="infoDialo">Info</string>
+    <string name="noTicketAvalb">Não hã ingressos disponíveis.</string>
+    <string name="infoIncorrect">Você forneceu informações incorrectas.</string>
+    <string name="orden"><font color="#e74f64"><u>Ordens</u></font></string>
+    <string name="newConfirmTicketText1">Para visualizar seus ingressos acesse a opção</string>
+    <string name="newConfirmTicketText2">, no menu do aplicativo.</string>
+    <string name="NoInternetMessage">Conecte seu dispositivo com conexão de Internet ativa</string>
+    <string name="cabinUnavaliabl">Mesa/Camarote indisponível.</string>
+    <string name="ProcessingText">Processando.</string>
+    
+
+</resources>

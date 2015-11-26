@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+
+    <dimen name="header_top_Heading">24px</dimen>
+    <dimen name="header_globe_icon_margin_left">23px</dimen>
+    <dimen name="header_globe_icon_margin_top">21px</dimen>
+    <dimen name="header_globe_icon_margin_bottom">21px</dimen>
+    <dimen name="header_text_margin_top">27px</dimen>
+    <dimen name="header_layout_height">77px</dimen>
+    <dimen name="header_text_margin_bottom">19px</dimen>
+
+    <!-- Defult Screen Size -->
+    <dimen name="bottam_tab_hight">50dp</dimen>
+    <dimen name="bottam_SearchBar_hight">40dp</dimen>
+    <dimen name="searchBar_textsize">17dp</dimen>
+    <dimen name="margin_left">31dp</dimen>
+    <dimen name="margin_right">31dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="margin_left_for_homeLogin">10dp</dimen>
+    <dimen name="margin_right_for_homesignup">10dp</dimen>
+    <dimen name="layout_top_width">60dp</dimen>
+    <dimen name="layout_top_Heading">17dp</dimen>
+    <dimen name="margin_left_forfacebook">10dp</dimen>
+    <dimen name="margin_right_forfacebook">17dp</dimen>
+    <dimen name="margin_top_for_login_edittext">20dp</dimen>
+    <dimen name="padding_left_edittext">10dp</dimen>
+    <dimen name="padding_right_edittext">10dp</dimen>
+    <dimen name="margin_right_forfacebooksignup">60dp</dimen>
+    <dimen name="margin_left_forfacebooksignup">50dp</dimen>
+    <dimen name="frag_bottam_bar">15dp</dimen>
+    <dimen name="padding_im_4_tab">7dp</dimen>
+
+    <!-- HDPI screen margins, per the Android Design guidelines. -->
+    <dimen name="addd_ticket_calculate_text_size">18px</dimen>
+
+    <!-- Home Screen dimensions dimensions -->
+
+    <dimen name="logo_marginTop">172px</dimen>
+    <dimen name="fb_button_marginTop">88px</dimen>
+    <dimen name="fb_button_textSize">19px</dimen>
+    <dimen name="singup_marginBottam">25px</dimen>
+    <dimen name="singup_marginLeft">28px</dimen>
+    <dimen name="login_btn_marginBottam">25px</dimen>
+    <dimen name="login_btn_marginRight">28px</dimen>
+
+    <!-- SignUp Screen dimensions -->
+
+    <dimen name="signup_headerHieght">77px</dimen>
+    <dimen name="singup_backBtn_leftMargin">23px</dimen>
+    <dimen name="singup_heading_textSize">24px</dimen>
+    <dimen name="singup_left_right_margin">22px</dimen>
+    <dimen name="singup_editText_topMargin_from_heading">35px</dimen>
+    <dimen name="singup_editText_textSize">18px</dimen>
+    <dimen name="singup_editText_leftPadding">10px</dimen>
+    <dimen name="singup_editText_topMargin_one_to_sec">25px</dimen>
+    <dimen name="singup_registerBtn_BottomMargin">5px</dimen>
+    <dimen name="singup_registerBtn_topMargin">31px</dimen>
+    <dimen name="singup_registerBtn_textSize">18px</dimen>
+
+    <!-- Login Screen dimensions -->
+    <dimen name="login_forgetBtn_BottomMargin">20px</dimen>
+    <dimen name="login_forgetBtn_TextSize">20px</dimen>
+
+    <!-- Activity Feed dimensions -->
+
+    <dimen name="Activity_feed_image_left_margin">12px</dimen>
+    <dimen name="Activity_feed_layout_height">125px</dimen>
+    <dimen name="Activity_feed_text2_right_margin">22px</dimen>
+    <dimen name="Activity_feed_text1_left_margin">19px</dimen>
+    <dimen name="Activity_feed_text1_size">19px</dimen>
+    <dimen name="Activity_feed_text2_size">17px</dimen>
+    <!-- <dimen name=""></dimen> -->
+    <!-- <dimen name=""></dimen> -->
+
+    <dimen name="header_images_margin">13px</dimen>
+    <!-- Whats Hot dimensions -->
+
+    <dimen name="Whats_hot_carousel_layout_height">440px</dimen>
+    <!-- 470 -->
+    <dimen name="Whats_hot_date_text_height">146px</dimen>
+    <dimen name="Whats_hot_date_text_width">150px</dimen>
+    <dimen name="Whats_hot_date_text1_size">42px</dimen>
+    <dimen name="Whats_hot_date_text2_size">18px</dimen>
+    <dimen name="Whats_hot_text1_top_margin">21px</dimen>
+    <dimen name="Whats_hot_text1_size">23px</dimen>
+    <dimen name="Whats_hot_text2_top_margin">8px</dimen>
+    <dimen name="Whats_hot_text2_size">16px</dimen>
+    <dimen name="Whats_hot_textview_layout_left_margin">22px</dimen>
+    <dimen name="WhatsHot_eventdate_Topmargin">25dp</dimen>
+    <dimen name="whatshot_tab_dateText1_size">30px</dimen>
+    <dimen name="whatshot_tab_dateText2_size">20px</dimen>
+    <dimen name="whatshot_eventname_textsize">23px</dimen>
+    <dimen name="whatshot_eventname1_textsize">16px</dimen>
+    <dimen name="whatshot_eventname2_textsize">18px</dimen>
+    <dimen name="whatshot_eventname1_topmargin">5px</dimen>
+    <dimen name="whatshot_eventname2_topmargin">10px</dimen>
+    <dimen name="whatshot_carousel_image_height">350px</dimen>
+    <dimen name="whatshot_carousel_image_width">250px</dimen>
+    <dimen name="whatshot_carousel_image2_height">200px</dimen>
+    <dimen name="All_screen_header_height">77px</dimen>
+    <dimen name="All_screen_header_text_size">24px</dimen>
+
+    <!-- Event Detail Dimensions -->
+    <!--
+    <dimen name="all_header_height">77px</dimen>
+    <dimen name="event_imageview_layout_width">314px</dimen>
+    <dimen name="event_imageview_layout_height">411px</dimen>
+    <dimen name="event_detail_right_layout_width">166px</dimen>
+    <dimen name="event_detail_right_layout_height">411px</dimen>
+    <dimen name="event_detail_text_layout_height">170px</dimen>
+    <dimen name="event_detail_text_layout_margin_left">27px</dimen>
+    <dimen name="event_detail_text_layout_margin_top">15px</dimen>
+    <dimen name="event_detail_text2_3__margin_top">7px</dimen>
+    <dimen name="event_detail_text4__margin_top">12px</dimen>
+    <dimen name="event_detail_text1__text_size">14sp</dimen>
+    <dimen name="event_detail_text2__text_size">18sp</dimen>
+    <dimen name="event_detail_text3__text_size">15sp</dimen>
+    <dimen name="event_detail_text4__text_size">15sp</dimen>
+    <dimen name="event_detail_button_layout_height">72px</dimen>
+    <dimen name="event_detail_back_button_layout_width">145px</dimen>
+    <dimen name="event_detail__button_layout_width">185px</dimen>
+    <dimen name="event_detail__calender_button_layout_width">160px</dimen>
+    <dimen name="event_detail__button_left_margin">23px</dimen>
+    <dimen name="event_detail__button_layout_text_left_margin">6px</dimen>
+    -->
+
+    <dimen name="all_header_height">77px</dimen>
+    <dimen name="event_imageview_layout_width">314px</dimen>
+    <dimen name="event_imageview_layout_height">390px</dimen>
+    <dimen name="event_detail_right_layout_width">166px</dimen>
+    <dimen name="event_detail_right_layout_height">413px</dimen>
+    <dimen name="event_detail_text_layout_height">170px</dimen>
+    <dimen name="event_detail_text_layout_margin_left">27px</dimen>
+    <dimen name="event_detail_text_layout_margin_top">15px</dimen>
+    <dimen name="event_detail_text2_3__margin_top">7px</dimen>
+    <dimen name="event_detail_text4__margin_top">12px</dimen>
+    <dimen name="event_detail_text1__text_size">14sp</dimen>
+    <dimen name="event_detail_text2__text_size">20px</dimen>
+    <dimen name="event_detail_text3__text_size">15sp</dimen>
+    <dimen name="event_detail_text4__text_size">15sp</dimen>
+    <dimen name="event_detail_button_layout_height">72px</dimen>
+    <dimen name="event_detail__button_left_margin">29px</dimen>
+    <dimen name="event_detail__button_layout_text_left_margin">6px</dimen>
+    <dimen name="back_text_left_margin">13px</dimen>
+    <dimen name="eventdetail_text_size">20px</dimen>
+    <dimen name="belowtext_layout_left_margin">20px</dimen>
+    <dimen name="belowtext_layout_top_margin">15px</dimen>
+    <dimen name="surrender_text_size">16px</dimen>
+    <dimen name="last_text_size">17px</dimen>
+    <dimen name="last_text_top_margin">24px</dimen>
+    <dimen name="reservetable_text_size">12px</dimen>
+    <dimen name="below_header_layout_top_margin">2px</dimen>
+    <dimen name="header_text_size">30px</dimen>
+
+    <!-- custom list view...for event,venues -->
+    <dimen name="custom_listview_image_layout_width">131px</dimen>
+    <dimen name="custom_listview_image_layout_height">152px</dimen>
+    <dimen name="custom_listview_layout_height">198px</dimen>
+    <dimen name="custom_listview_layout_image_left_margin">23px</dimen>
+    <dimen name="custom_listview_text_layout_margin_top">30px</dimen>
+    <dimen name="custom_listview_text_margin_top">8px</dimen>
+    <dimen name="custom_listview_text1_margin_top">5px</dimen>
+    <dimen name="custom_listview_text_margin_left">8px</dimen>
+    <dimen name="custom_listview_icon_margin_top">4px</dimen>
+    <dimen name="custom_listview_margin_bottom_top">23px</dimen>
+    <dimen name="venue_list_item_height">160px</dimen>
+
+    <!-- Upcoming Event Dimens -->
+
+    <dimen name="venue_surrender_text_top_margin">13px</dimen>
+    <dimen name="venue_eventname_text_top_margin">10px</dimen>
+    <dimen name="venue_location_text_layout_top_margin">10px</dimen>
+    <dimen name="venue_header_text_size">24px</dimen>
+    <dimen name="upcoming_textview_layout_left_margin">21px</dimen>
+    <dimen name="upcoming_event_image_height">130px</dimen>
+    <dimen name="upcoming_event_image_width">102px</dimen>
+    <dimen name="upcoming_image_layout_left_margin">27px</dimen>
+    <dimen name="upcoming_event_image_top_margin">23px</dimen>
+    <dimen name="upcoming_event_image_bottom_margin">23px</dimen>
+    <dimen name="header_search_icon_margin_right">23px</dimen>
+    <dimen name="header_search_icon_margin_top">24px</dimen>
+    <dimen name="header_search_icon_margin_bottom">21px</dimen>
+    <dimen name="upcoming_search_layout_height">66px</dimen>
+    <dimen name="upcoming_search_layout_search_icon_left">18px</dimen>
+    <dimen name="upcoming_search_layout_search_icon_top">22px</dimen>
+    <dimen name="upcoming_search_layout_cancel_icon_right">18px</dimen>
+    <dimen name="upcoming_search_layout_cancel_icon_top">14px</dimen>
+    <dimen name="upcoming_location_icon_margin_top">3dp</dimen>
+    <dimen name="upcoming_event_items_layout_height">180px</dimen>
+    <dimen name="circularImageView_forAll_layout_height">117px</dimen>
+    <dimen name="circularImageView_forAll_layout_marginLeft">20px</dimen>
+    <dimen name="circularImageView_forAll_layout_Imageheight">80px</dimen>
+    <dimen name="circularImageView_forAll_layout_textMarginRight">130px</dimen>
+    <dimen name="circularImageView_forAll_layout_textMarginLeft">10px</dimen>
+    <dimen name="circularImageView_forAll_layout_textSize">19px</dimen>
+    <dimen name="circularImageView_forAll_layout_textSize2">16px</dimen>
+    <dimen name="circularImageView_forAll_layout_textSize3">25px</dimen>
+    <dimen name="upcoming_tex3_4_left">8px</dimen>
+    <dimen name="upcoming_text1_top">27px</dimen>
+    <dimen name="upcoming_text1_4_size">18px</dimen>
+    <dimen name="upcoming_text2_size">22px</dimen>
+    <dimen name="upcoming_text3_size">20px</dimen>
+    <dimen name="upcoming_text2_top">3px</dimen>
+    <dimen name="upcoming_text3_layout_top">10px</dimen>
+    <dimen name="upcoming_text4_layout_top">8px</dimen>
+    <dimen name="upcoming_text4_margin_top">10px</dimen>
+
+    <!-- Add tickets Dimens -->
+
+    <dimen name="addtcket_back_btn_left_margin">22px</dimen>
+    <dimen name="addticket_forward_btn_top_margin">24px</dimen>
+    <dimen name="addtcket_forward_btn_right_margin">22px</dimen>
+    <dimen name="vip_text_top_margin">22px</dimen>
+    <dimen name="vip_text_left_margin">21px</dimen>
+    <dimen name="edison_club_text_top_margin">8px</dimen>
+    <dimen name="calculate_layout_top_margin">39px</dimen>
+    <dimen name="consumption_layout_top_margin">47px</dimen>
+    <dimen name="consumption_layout_height">45px</dimen>
+    <dimen name="consumption_padding_left">21px</dimen>
+    <dimen name="consumption_text_right_magin">20px</dimen>
+    <dimen name="event_date_top_margin">26px</dimen>
+    <dimen name="event_date_right_margin">21px</dimen>
+    <dimen name="event_text4_top_margin">49px</dimen>
+
+    <!-- Venue Details... -->
+    <dimen name="venue_detail_header_height">77px</dimen>
+    <dimen name="venue_detail_eventimage_height">265px</dimen>
+    <dimen name="venue_detail_eventDesc_height">200px</dimen>
+    <dimen name="venue_detail_eventimage_width">480px</dimen>
+    <dimen name="venue_detail_venue_name_margin_left">30px</dimen>
+    <dimen name="venue_detail_venue_name_textsize">24px</dimen>
+    <dimen name="venue_detail_venue_desc_layout_height">220px</dimen>
+    <dimen name="venue_detail_venue_location_telephone_layout_margin_top_left">15px</dimen>
+    <dimen name="venue_detail_view_agenda_layout_height">60px</dimen>
+    <dimen name="venue_detail_bottom_layout_height">61px</dimen>
+    <dimen name="venue_detail_bottom_layout_recommend_like_fav_width">158px</dimen>
+    <dimen name="venue_detail_total_like_textsize">15dp</dimen>
+    <dimen name="venue_detail_view_agenda_textsize">15dp</dimen>
+    <dimen name="venue_detail_desctext_textsize">17px</dimen>
+    <dimen name="venue_detail_desctext_margin_left">22px</dimen>
+    <dimen name="venue_detail_desctext_margin_top">48px</dimen>
+    <dimen name="venue_detail_divider_margin_top_left">13px</dimen>
+    <dimen name="venue_detail_location_text_left">14px</dimen>
+    <dimen name="venue_detail_location_text_top">15px</dimen>
+    <dimen name="venue_detail_telephone_icon_top">17px</dimen>
+    <dimen name="venue_detail_top_heading">24px</dimen>
+    <dimen name="venue_detail_eventimage_layout_top">-9dp</dimen>
+    <dimen name="venue_detail_textView_Height">69px</dimen>
+
+    <!-- Profile.. -->
+
+    <dimen name="profile_userimage_name_layout_height">170px</dimen>
+    <dimen name="profile_userimage_layout_height_width">87dp</dimen>
+    <dimen name="profile_userimage_layout_left">23px</dimen>
+    <dimen name="profile_username_layout_left">27dp</dimen>
+    <dimen name="profile_username_text_size">24px</dimen>
+    <dimen name="profile_divider_horiz">385px</dimen>
+    <dimen name="profile_userinfo_layout_height">82px</dimen>
+    <dimen name="profile_plus_btn_layout_width">95px</dimen>
+    <dimen name="profile_location_layout_width">178px</dimen>
+    <dimen name="profile_age_layout_width">98px</dimen>
+    <dimen name="profile_friend_layout_width">110px</dimen>
+    <dimen name="profile_bottom_layout_height">74px</dimen>
+    <dimen name="profile_bottom_layout_text_size">22px</dimen>
+    <dimen name="profile_header_heading_text_size">24px</dimen>
+    <dimen name="profile_userinfo_text_label_size">18px</dimen>
+    <dimen name="profile_userinfo_text_size">16px</dimen>
+    <dimen name="profile_userinfo_label_text_top">5px</dimen>
+    <dimen name="profile_location_label_left">10dp</dimen>
+    <dimen name="profile_userifo_text_top">12px</dimen>
+
+    <!--  -->
+
+    <dimen name="btn_back_top_margin">21px</dimen>
+    <dimen name="btn_back_left_margin">23px</dimen>
+    <dimen name="btn_back_bottom_margin">21px</dimen>
+    <dimen name="upcomingeventheading_top_margin">27px</dimen>
+    <dimen name="btn_SettingIcon_top_margin">21px</dimen>
+    <dimen name="btn_SettingIcon_right_margin">23px</dimen>
+    <dimen name="img_userProfilelayout_top_margin">22px</dimen>
+    <dimen name="img_userProfilelayout_left_margin">26px</dimen>
+    <dimen name="img_userProfilelayout_bottom_margin">30px</dimen>
+    <dimen name="home_view_icon_left_margin">35px</dimen>
+    <dimen name="tV_userName_left_margin">26px</dimen>
+    <dimen name="tV_userName_top_margin">75px</dimen>
+    <dimen name="home_view_icon_layout_height">82px</dimen>
+    <dimen name="cart_view_layout_width">385px</dimen>
+    <dimen name="location_layout_width">185px</dimen>
+    <dimen name="locationTV_top_margin">12px</dimen>
+    <dimen name="profile_view_width">100px</dimen>
+    <dimen name="upcomingeventheading_text_size">24px</dimen>
+    <dimen name="upcoming_tV_userName_text_size">24px</dimen>
+    <dimen name="homeView_top_margin">28px</dimen>
+    <dimen name="home_view_icon_width">70px</dimen>
+    <dimen name="myprofile_listview_height">100px</dimen>
+    <dimen name="myprofile_locationTV_text_size">16px</dimen>
+    <dimen name="myprofile_tv_userLoacation_text_size">19px</dimen>
+    <dimen name="myprofile_ActivityUser_text_size">15px</dimen>
+    <dimen name="myprofile_ActivityUser_text_left">23px</dimen>
+    <dimen name="myprofile_ActivityUser_textTopmargin">26px</dimen>
+    <dimen name="myprofile_Activity_time_stamp_text_right">39px</dimen>
+
+    <!-- common dimen -->
+
+    <dimen name="hdpi_progressBar_height">25dp</dimen>
+
+    <!-- orderHistoryListViewItemsLayout -->
+
+    <dimen name="order_history_listView_item_layout_height">80dp</dimen>
+    <dimen name="order_history_listView_item_datetext_leftmargin">10dp</dimen>
+    <dimen name="order_history_listView_item_datetext_Topmargin">40px</dimen>
+    <dimen name="order_history_listView_item_text_TextSize">21px</dimen>
+    <dimen name="order_history_listView_item_confirmtext_TextSize">18px</dimen>
+    <dimen name="order_history_listView_item_odercodetext_leftMargin">90dp</dimen>
+
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+
+
+    <!-- orderHistory -->
+
+    <dimen name="order_history_header_textsize">25px</dimen>
+    <dimen name="order_history_header_image_leftmargin">13dp</dimen>
+    <dimen name="order_history_divider_height">0.5dp</dimen>
+
+    <!-- orderRejectionPendingAlertPopUp -->
+
+    <dimen name="orderRejectionPendingAlertPopUp_margins">40dp</dimen>
+    <dimen name="orderRejectionPendingAlertPopUp_header_textSize">18dp</dimen>
+    <dimen name="orderRejectionPendingAlertPopUp_status_textsize">17dp</dimen>
+    <dimen name="orderRejectionPendingAlertPopUp_status_padding">20dp</dimen>
+    <dimen name="orderRejectionPendingAlertPopUp_button_height">30dp</dimen>
+    <dimen name="orderRejectionPendingAlertPopUp_button_width">50dp</dimen>
+    <dimen name="orderRejectionPendingAlertPopUp_button_top_margin">7dp</dimen>
+    <dimen name="orderRejectionPendingAlertPopUp_headerText_topmargin">8dp</dimen>
+
+    <!-- orderTicketsConfirmations -->
+
+    <dimen name="orderTicketConfirmation_button_width">220px</dimen>
+    <dimen name="orderTicketConfirmation_button_height">50px</dimen>
+    <dimen name="orderTicketConfirmation_button_textsize">18px</dimen>
+    <dimen name="orderTicketConfirmation_button_left_margin">10px</dimen>
+    <dimen name="orderTicketConfirmation_button_layout_topmargin">18px</dimen>
+    <dimen name="orderTicketConfirmation_ticketconsumptiontext_topmargin">10px</dimen>
+    <dimen name="orderTicketConfirmation_ticketDetail_padding">10px</dimen>
+    <dimen name="orderTicketConfirmation_address_textsize">17px</dimen>
+    <dimen name="orderTicketConfirmation_address_textTopmargin">7px</dimen>
+    <dimen name="orderTicketConfirmation_Username_textsize">21px</dimen>
+    <dimen name="orderTicketConfirmation_userId_textTopmargin">12px</dimen>
+    <dimen name="orderTicketConfirmation_UserNameText_topMargin">5px</dimen>
+    <dimen name="orderTicketConfirmation_QrCodeimage_height">100dp</dimen>
+    <dimen name="orderTicketConfirmation_ticketOrdercode_topmargin">10px</dimen>
+    <dimen name="orderTicketConfirmation_ticketOrderCode_detailtextSize">21px</dimen>
+    <dimen name="orderTicketConfirmation_order_textsize">22px</dimen>
+    <dimen name="orderTicketConfirmation_Useradd_textsize">19px</dimen>
+
+    <!-- privacyPolicy -->
+
+    <dimen name="privacyPolicy_header_textsize">16dp</dimen>
+    <dimen name="privacyPolicy_header_text_topmargin">15dp</dimen>
+    <dimen name="privacyPolicy_scroll_padding">8dp</dimen>
+    <dimen name="privacyPolicy_textcontent1_textsize">14dp</dimen>
+    <dimen name="privacyPolicy_textcontent2_textsize">13dp</dimen>
+    <dimen name="orsummarybelow_edittext_height">55px</dimen>
+    <dimen name="orsummarybelow_edittext_text_size">19px</dimen>
+    <dimen name="User_billing_info_layout_editText_height">70px</dimen>
+
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- new registerDimens -->
+
+    <dimen name="pfsignup_headerHieght">77px</dimen>
+    <dimen name="pfsingup_backBtn_leftMargin">23px</dimen>
+    <dimen name="pfsingup_heading_textSize">24px</dimen>
+    <dimen name="pfsingup_left_right_margin">26px</dimen>
+    <dimen name="pfsingup_editText_topMargin_one_to_sec">23px</dimen>
+    <dimen name="pfsingup_editText_topMargin_from_heading">35px</dimen>
+    <dimen name="pfsingup_registerBtn_topMargin">31px</dimen>
+    <dimen name="pfsingup_editText_textSize">18px</dimen>
+    <dimen name="pfsingup_editText_leftPadding">10px</dimen>
+    <dimen name="pfregister_editText_topMargin_one_to_sec">25px</dimen>
+    <dimen name="pfsingup_registerBtn_BottomMargin">5px</dimen>
+    <dimen name="pfregister_registerBtn_topMargin">31px</dimen>
+    <dimen name="pfsingup_registerBtn_textSize">18px</dimen>
+    <dimen name="pfeT_userFirstName_btn_height">64px</dimen>
+    <dimen name="pfregister_editText_topMargin_from_heading">35px</dimen>
+    <dimen name="pfregister_edittext_height">63px</dimen>
+
+    <!-- <dimen name="recommended_listview_text_topmargin">25px</dimen> -->
+
+    <dimen name="mysetting_layout_textview_height">90px</dimen>
+    <dimen name="mysetting_layout_textview_txtsize">20px</dimen>
+    <dimen name="mysetting_layout_margin_btw_img_textview">10px</dimen>
+    <dimen name="mysetting_layout_textview_facebook_btn_txtsize">20px</dimen>
+    <dimen name="mysetting_layout_marginleft_textview">18px</dimen>
+    <dimen name="mysetting_layout_facebook_btn_top_margin">15px</dimen>
+    <dimen name="confirm_friend_request_delete_btn_height">40px</dimen>
+    <dimen name="confirm_friend_request_delete_btn_width">120px</dimen>
+    <dimen name="friendRequestSende_popUp_textSize">15dp</dimen>
+    <dimen name="all_imageview_layout_height">95px</dimen>
+    <dimen name="image_view_top_margin">20px</dimen>
+    <dimen name="event_detail_date__topmargin">15sp</dimen>
+    <dimen name="event_detail_back_button_layout_width">145px</dimen>
+    <dimen name="event_detail__button_layout_width">185px</dimen>
+    <dimen name="event_detail__calender_button_layout_width">160px</dimen>
+    <dimen name="back_text_right_margin">30px</dimen>
+    <dimen name="northern_Light_text_size">23px</dimen>
+    <dimen name="northern_light_top_margin">8px</dimen>
+    <dimen name="locationlayout_top_margin">8px</dimen>
+    <dimen name="losangeles_text_size">17px</dimen>
+
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+
+
+    <!-- <dimen name="event_time_top_margin">12px</dimen> -->
+
+    <dimen name="ticket_type_textsize">24px</dimen>
+    <dimen name="club_text_size">19px</dimen>
+    <dimen name="price_text_size">30px</dimen>
+
+    <!-- HDPI -->
+    <!-- HDPI -->
+
+
+    <!-- order_summary Dimensions -->
+    <dimen name="ordersummary_text_size">25px</dimen>
+    <dimen name="back_img_left_margin">24px</dimen>
+    <dimen name="orsummary_headerbelow_layout_top_margin">27px</dimen>
+    <dimen name="orsummary_headerbelow_layout_left_margin">24px</dimen>
+    <dimen name="text1_text_size">22px</dimen>
+    <dimen name="text2_top_margin">3px</dimen>
+    <dimen name="text2_text_size">19px</dimen>
+    <dimen name="text3_text_size">19px</dimen>
+    <dimen name="btn_layout_top_margin">38px</dimen>
+    <dimen name="orsummary_btn_height">50px</dimen>
+    <dimen name="orsummary_btn_width">416px</dimen>
+    <dimen name="btn2_top_margin">22px</dimen>
+    <dimen name="orsummarybelow_edittext_leftpadding">21px</dimen>
+    <dimen name="listview_layout_top_margin">18px</dimen>
+    <dimen name="listview_layout_left_margin">20px</dimen>
+    <dimen name="listview_layout_height">112px</dimen>
+    <dimen name="listview_layout_right_margin">20px</dimen>
+    <dimen name="listview_edittext1_size">22px</dimen>
+    <dimen name="listview_edittext2_size">18px</dimen>
+    <dimen name="listview_edittext2_top_margin">8px</dimen>
+    <dimen name="listview_edittext3_top_margin">70px</dimen>
+    <dimen name="listview_edittext3_text_size">20px</dimen>
+    <dimen name="listview_edittext4_text_size">18px</dimen>
+    <dimen name="listview_edittext4_bottom_margin">15px</dimen>
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- card register layout -->
+
+    <dimen name="card_register_layout_editText_height">70px</dimen>
+    <dimen name="card_register_layout_editText_topmargin">30px</dimen>
+    <dimen name="card_register_layout_leftRight_margin">26px</dimen>
+    <dimen name="card_register_layout_Text_leftRight_margin">35px</dimen>
+    <dimen name="card_register_layout_DateText_leftRight_margin">10px</dimen>
+    <dimen name="card_register_layout_editText_leftPadding">15px</dimen>
+    <dimen name="card_register_layout_sub_headingTextSize">20px</dimen>
+    <dimen name="card_register_layout_sub_headingText_topMargin">15px</dimen>
+    <dimen name="card_register_layout_Btn_textSize">20px</dimen>
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+
+
+    <!-- Select_promoter_layout_dimes -->
+    <dimen name="selectpromoter_headerlayout_height">77px</dimen>
+    <dimen name="selectpromoter_backimage_leftmargin">20px</dimen>
+    <dimen name="selectpromoter_headertext_size">30px</dimen>
+    <dimen name="selectpromoter_belowlayout_topmargin">20px</dimen>
+    <dimen name="selectpromoter_belowtext_topmargin">10px</dimen>
+    <dimen name="selectpromoter_belowtext_textsize">25px</dimen>
+    <dimen name="selectpromoter_listview_topmargin">20px</dimen>
+
+    <!-- Select_promoter_listviewlayout_dimes -->
+    <dimen name="selectpromoter_listviewlayout_leftmargin">20px</dimen>
+    <dimen name="selectpromoter_listviewlayout_height">100px</dimen>
+    <dimen name="selectpromoter_listviewlayout_rightmargin">20px</dimen>
+    <dimen name="selectpromoter_listviewlayout_topmargin">30px</dimen>
+    <dimen name="selectpromoter_listviewlayout_bottommargin">30px</dimen>
+    <dimen name="selectpromoter_listview_text_leftmargin">30px</dimen>
+
+    <!-- card register layout -->
+    <!-- HDPI -->
+
+
+    <!-- HDPI -->
+    <!-- XHDPI -->
+
+
+    <!-- Extra -->
+    <!-- Extra -->
+    <!-- Extra -->
+    <!-- Extra -->
+    <!-- Extra -->
+    <!-- Extra -->
+    <!-- Extra -->
+    <!-- Extra -->
+    <!-- Extra -->
+    <!-- Extra -->
+    <!-- Extra -->
+    <!-- Extra -->
+    <!-- Extra -->
+    <!-- Extra -->
+    <!-- Extra -->
+
+    <dimen name="event_detail__1stbutton_left_margin">23px</dimen>
+    <dimen name="ticket_type_consumptiontextsize">18px</dimen>
+    <dimen name="ticket_type_datetextsize">20px</dimen>
+    <dimen name="orsummary_userdetail_layout_top_margin">28px</dimen>
+    <dimen name="text3_top_margin">9px</dimen>
+    <dimen name="order_history_listView_item_text1_TextSize">16px</dimen>
+    <dimen name="recommended_text1_textsize">22px</dimen>
+    <dimen name="recommended_text2_textsize">17px</dimen>
+    <dimen name="recommended_text3_textsize">19px</dimen>
+    <dimen name="upcoming_tex3_date_left">55px</dimen>
+    <dimen name="venues_text1_textsize">24px</dimen>
+    <dimen name="venues_text2_textsize">20px</dimen>
+    <dimen name="venues_text3_textsize">18px</dimen>
+    <dimen name="venue_detail_desctext_textsize2">16px</dimen>
+    <dimen name="newUpcomingText1size">16px</dimen>
+    <dimen name="newUpcomingText2size">23px</dimen>
+    <dimen name="newUpcomingText3size">18px</dimen>
+    <dimen name="newUpcomingText4size">16px</dimen>
+    <dimen name="orsummarybelow_layout_top_margin">15px</dimen>
+    <dimen name="custom_dialog_guestlist_headingtextsize">14sp</dimen>
+    <dimen name="custom_dialog_guestlist_layout_height">140dp</dimen>
+    <dimen name="recommended_delete_btn">50dp</dimen>
+    <dimen name="recommended_listview_text_topmargin">7px</dimen>
+
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+
+    <dimen name="Activity_main_listView_topMargin">31dp</dimen>
+    <dimen name="Activity_main_listView_bottomMargin">31dp</dimen>
+    <dimen name="Activity_main_listView_username_textsize">17sp</dimen>
+    <dimen name="Activity_main_listView_username_textwidth">80dp</dimen>
+    <dimen name="Activity_main_listView_userFriends_textsize">11sp</dimen>
+    <dimen name="Activity_main_listView_userImageHeightWidth">70dp</dimen>
+    <dimen name="Activity_main_listView_userFriends_topmargin">4dp</dimen>
+    <dimen name="Activity_main_listView_username_topmargin">3dp</dimen>
+    <dimen name="Activity_main_leftdrawer_width">260dp</dimen>
+    <dimen name="Activity_main_listView_textSize">20px</dimen>
+    <dimen name="Activity_main_listView_item_height">53dp</dimen>
+    <dimen name="Activity_main_userimage_layout_margin">12dp</dimen>
+    <dimen name="Activity_main_tab_host_textSize">8sp</dimen>
+    <dimen name="Activity_main_tab_host_imageSize">25dp</dimen>
+    <dimen name="Activity_main_tab_host_imageSize_layoutHeight">50dp</dimen>
+
+    <!-- HDPI -->
+    <!-- HDPI -->
+
+    <dimen name="order_summery_total_price_margin">3dp</dimen>
+    <dimen name="orderTransectionDetailEventName_top">0dp</dimen>
+    <dimen name="singup_editText_topMargin_saveInformation">25px</dimen>
+    <dimen name="ticket_quantitytext_leftmargin">30px</dimen>
+    <dimen name="recommendedTextLayoutLeftmargin">0px</dimen>
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- HDPI -->
+    <!-- CAROSAL -->
+
+
+    <!--
+         <dimen name="xxxxxxxxxxxxxxxx">-250px</dimen>
+    <dimen name="xxxxxxxxxxxxxxxxpadding">30px</dimen>
+    <dimen name="whatsHot_image_height">510px</dimen>
+    <dimen name="whatsHot_image_width">340px</dimen>
+    
+    <dimen name="whatsHot_carousel_hieght">530px</dimen>   370[px]  08/08/2015
+    <dimen name="whatsHot_carousel_width">350px</dimen>     260[px]  08/08/2015
+    -->
+
+
+    <!-- for hdpi -->
+    <!-- for hdpi -->
+
+    <dimen name="xxxxxxxxxxxxxxxx">-190px</dimen>
+    <dimen name="xxxxxxxxxxxxxxxxpadding">20px</dimen>
+    <dimen name="whatsHot_image_height">420px</dimen>
+    <dimen name="whatsHot_image_width">360px</dimen>
+    <dimen name="whatsHot_carousel_hieght">420px</dimen>
+ <!-- 370[px]  08/08/2015 -->
+    <dimen name="whatsHot_carousel_width">280px</dimen>
+ <!-- 260[px]  08/08/2015 -->
+
+    <dimen name="order_summery_addnewcard_bottom">15dp</dimen>
+    <dimen name="ordersummary_itemlayout_height">70dp</dimen>
+    <dimen name="guest_list_edit_text_width">53px</dimen>
+    <dimen name="delete_item_text_size">20px</dimen>
+    <dimen name="delete_card_item_text_size">14px</dimen>
+    <dimen name="new_orderConfirmation_sucessTxtSize">17dp</dimen>
+    <dimen name="new_orderConfirmation_sucessTxt_topMargin">12dp</dimen>
+    <dimen name="new_orderConfirmation_odrerumText_size">13dp</dimen>
+    <dimen name="new_orderConfirmation_odrerumText_topMargin">10dp</dimen>
+    <dimen name="new_orderConfirmation_odrerumText_leftRightMargin">15dp</dimen>
+    <dimen name="new_orderConfirmation_odrerumText2_leftRightMargin">15dp</dimen>
+    <dimen name="new_orderConfirmation_image_heightWidth">80dp</dimen>
+    <dimen name="new_orderConfirmation_image_topmargin">15dp</dimen>
+    <dimen name="silidingMenuTextPadding">15dp</dimen>
+
+</resources>

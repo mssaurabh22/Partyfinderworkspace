@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+    
+    <RelativeLayout 
+        android:id="@+id/selectpromoter_mainlayout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <ProgressBar  android:id="@+id/promProgbar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        <RelativeLayout 
+            android:id="@+id/selectpromoter_headerlayout"
+            android:layout_height="@dimen/All_screen_header_height"
+            android:layout_width="match_parent">
+            
+            <ImageView 
+                android:id="@+id/selectpromoter_backimage"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/selectpromoter_backimage_leftmargin"
+                android:src="@drawable/addback"
+                android:visibility="gone"/>
+            
+            
+                <com.partyfinder.CustomView.CustomFontSemiBold
+                     android:textColor="@color/layout_top_heading_color"
+                    android:textSize="@dimen/All_screen_header_text_size"
+                android:id="@+id/selectpromoter_headertext"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                
+                android:text="@string/select_promoter"/>
+            <ImageButton
+                android:id="@+id/selectpromoter_forwardimage"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/selectpromoter_backimage_leftmargin"
+                android:background="#00000000"
+                android:src="@drawable/forward"/>
+            <TextView
+        android:id="@+id/tvv"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+  		android:layout_alignParentBottom="true"
+        android:background="#b2b2b2" />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:id="@+id/selectpromoter_belowlayout"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectpromoter_headerlayout"
+            android:background="#ffffff"
+            
+            android:layout_width="match_parent">
+            <!-- android:layout_marginTop="@dimen/selectpromoter_belowlayout_topmargin" -->
+            <com.partyfinder.CustomView.CustomFontRegular
+                android:id="@+id/selectpromoter_belowtext"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/selectpromoter_belowtext_textsize"
+                android:layout_marginTop="@dimen/selectpromoter_belowtext_topmargin"
+                android:textColor="#FE2E2E"
+                android:text="@string/whoPromotedU"/>
+            
+<!--   <eu.erikw.PullToRefreshListView -->
+         <ListView
+             android:id="@+id/selectpromoter_listview"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+           	 
+             android:layout_below="@id/selectpromoter_belowtext"
+             tools:listitem="@layout/select_promoterlistview" 
+             android:overScrollMode="never"
+             android:scrollbars="none"
+             android:divider="@drawable/eventsdivider"/>
+        
+
+         </RelativeLayout>
+
+    </RelativeLayout>
+    
+
+</LinearLayout>

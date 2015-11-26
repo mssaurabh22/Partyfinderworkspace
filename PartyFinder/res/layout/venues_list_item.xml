@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+       <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+    
+        
+      
+        android:weightSum="1">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+           android:layout_weight="0.20"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+        
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:gravity="center">
+            
+            
+                <RelativeLayout
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+      
+            >
+
+            <ImageView
+                android:id="@+id/im_vc_image_url"
+                android:layout_width="@dimen/upcoming_event_image_width"
+                android:layout_height="@dimen/upcoming_event_image_height"
+          android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/event_image" />
+
+            <ProgressBar
+                android:id="@+id/small_Progress_bar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+            
+             </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:gravity="center_vertical">
+                
+            
+            <RelativeLayout
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+         
+            
+             >
+
+            <com.partyfinder.CustomView.CustomFontRegular
+                android:id="@+id/surrender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="surrender"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/venue_surrender_text_top_margin"
+                android:textColor="@color/GreenPartyFinderGreen"
+                 android:textSize="@dimen/venues_text1_textsize"
+               />
+
+            <com.partyfinder.CustomView.CustomFontRegular
+                android:id="@+id/tv_vc_event_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/surrender"
+                android:layout_marginTop="@dimen/venue_eventname_text_top_margin"
+                android:singleLine="true"
+                android:layout_marginLeft="3dp"
+                android:text="J.Cole Birthday Celebration"
+                android:textColor="#83837d"
+                 android:textSize="@dimen/venues_text2_textsize" 
+                />
+
+            <LinearLayout
+                android:id="@+id/textview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_below="@+id/tv_vc_event_name"
+                android:layout_marginTop="@dimen/venue_location_text_layout_top_margin"
+                android:orientation="horizontal" >
+
+                <ImageView 
+              
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location"/>
+                     
+
+                <com.partyfinder.CustomView.CustomFontRegular
+                    android:id="@+id/tv_vc_event_addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/upcoming_tex3_4_left"
+                      android:singleLine="true"
+                    android:text="Banilad, Cebu, Philippines"
+                    android:textColor="#83837d"
+                    android:textSize="@dimen/venues_text3_textsize" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+            
+             </LinearLayout>
+        
+        
+        
+        
+        
+           </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>

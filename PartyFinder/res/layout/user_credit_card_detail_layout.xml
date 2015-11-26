@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <FrameLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/fragmentContainer"
+        android:clickable="true">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@dimen/weight_header" >
+            
+            <RelativeLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+  <RelativeLayout 
+                          android:id="@+id/backButton_layout"
+                    android:layout_height="match_parent"
+                    android:layout_width="80dp"
+                    android:layout_alignParentLeft="true">
+        <ImageButton
+            android:id="@+id/btn_settingBck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:layout_marginLeft="23px"
+            android:src="@drawable/backbtn" />
+  </RelativeLayout>
+    
+        <com.partyfinder.CustomView.CustomFontSemiBold
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/usercreditcarddetail_heading"
+            android:textColor="@color/layout_top_heading_color"
+            android:textSize="@dimen/All_screen_header_text_size" />
+        
+        
+                  <TextView
+        android:id="@+id/tvv"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+    android:layout_alignParentBottom="true"
+        android:background="#b2b2b2" />
+    </RelativeLayout>
+                
+  </LinearLayout>
+  
+        
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#232323"
+            android:layout_weight="0.89" >
+            
+                 <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/userCreditCardList"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/l"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:padding="10dp"
+        android:listSelector="#00000000"
+        android:divider="@drawable/eventsdivider"
+        tools:listitem="@layout/user_credit_card_detail_item_layout"/>
+        
+                
+  </LinearLayout>
+        
+</LinearLayout>
+    </FrameLayout>
+    </RelativeLayout>

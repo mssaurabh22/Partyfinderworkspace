@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="#ffffff" >
+		<ProgressBar
+            android:id="@+id/guestListProgress"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+        <RelativeLayout
+            android:id="@+id/relativelayoutHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" >
+
+            <com.partyfinder.CustomView.CustomFontRegular
+                android:id="@+id/textViewHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/guestlist"
+                android:textColor="#262525"
+                android:textSize="16dp" />
+
+            <com.partyfinder.CustomView.CustomFontLight
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewHeading"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/guestlistpopupheading"
+                android:padding="10dp"
+                android:textColor="#262525"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_dialog_guestlist_layout_height"
+            android:layout_below="@+id/relativelayoutHeader"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+             >
+
+            <LinearLayout
+                android:id="@+id/relativelayoutText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <!-- <com.partyfinderCheckin.Custom.CustomEditText -->
+
+            </LinearLayout>
+        </ScrollView>
+        <!--
+        <RelativeLayout
+            android:id="@+id/relativelayoutEdt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scroll"
+            android:layout_marginTop="13dp" >
+
+            <EditText
+                android:id="@+id/passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+        -->
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scroll" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.47" >
+
+                    <Button
+                        android:id="@+id/plushBtnGuestList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/button_background_color"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textColor="#ffffff"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <!--
+                      <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.10" >
+
+                <Button
+                   
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:background="#ffffff"
+                         />
+                </LinearLayout>
+                -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.47" >
+
+                    <Button
+                        android:id="@+id/sendGuest"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/button_background_color"
+                        android:gravity="center"
+                        android:text="@string/send"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <!-- tools:context=".GoogleMapV2" -->
+
+    <RelativeLayout
+        android:id="@+id/googlemapheader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/All_screen_header_height"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/gmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="#00000000"
+            android:src="@drawable/googlemenu" />
+
+        <com.partyfinder.CustomView.CustomFontSemiBold
+            android:id="@+id/upcomingeventheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/upcomingEvent"
+            android:textColor="@color/layout_top_heading_color"
+            android:textSize="@dimen/All_screen_header_text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/googlemapheader"
+        android:background="#00000000"
+        android:clickable="true" >
+
+        <RelativeLayout
+            android:id="@+id/reelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <!--
+        <fragment
+            android:id="@+id/mapFragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:map="http://schemas.android.com/apk/res-auto" />
+            -->
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:background="#ffffff" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/tabs_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff" >
+    </RelativeLayout>
+
+</RelativeLayout>

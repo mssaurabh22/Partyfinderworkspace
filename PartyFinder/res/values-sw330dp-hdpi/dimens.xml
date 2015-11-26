@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    
+    
+    
+    
+		    <dimen name="Activity_main_listView_topMargin">31dp</dimen>
+		    <dimen name="Activity_main_listView_bottomMargin">31dp</dimen>
+		    <dimen name="Activity_main_listView_username_textsize">17sp</dimen>
+		    <dimen name="Activity_main_listView_username_textwidth">78dp</dimen>
+		    <dimen name="Activity_main_listView_userFriends_textsize">10sp</dimen>
+		    <dimen name="Activity_main_listView_userImageHeightWidth">70dp</dimen>
+		    <dimen name="Activity_main_listView_userFriends_topmargin">4dp</dimen>
+		    <dimen name="Activity_main_listView_username_topmargin">3dp</dimen>
+		    <dimen name="Activity_main_leftdrawer_width">260dp</dimen>
+		    <dimen name="Activity_main_listView_textSize">12sp</dimen>
+		    <!-- <dimen name="Activity_main_listView_textSize">25px</dimen> -->
+		    <dimen name="Activity_main_listView_item_height">64dp</dimen>
+   			<!--<dimen name="Activity_main_listView_item_height">67dp</dimen> -->
+   
+
+
+
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/checkFrndForRecommend"
+            android:layout_width="match_parent"
+            android:layout_height="70sp"
+            android:layout_centerVertical="true"
+            android:button="@layout/custom_check_box"
+            android:focusable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.17"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:weightSum="1" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="center" >
+
+                    <RelativeLayout
+                        android:id="@+id/recommend_layout"
+                        android:layout_width="@dimen/circularImageView_forAll_layout_Imageheight"
+                        android:layout_height="@dimen/circularImageView_forAll_layout_Imageheight"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/imagebg"
+                        android:padding="2dp" >
+
+                        <!--  -->
+
+                        <com.partyfinder.CustomView.ImageViewRounded
+                            android:id="@+id/recommendFrndImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY" />
+
+                        <ProgressBar
+                            android:id="@+id/imageLoadproBarAcFeed"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.53"
+                    android:gravity="center_vertical" >
+
+                    <com.partyfinder.CustomView.CustomFontRegular
+                        android:id="@+id/recommendedFrndName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Friend Name"
+                        android:textColor="@color/GreenPartyFinderGreen"
+                        android:textSize="@dimen/circularImageView_forAll_layout_textSize" />
+                </LinearLayout>
+
+                <!--
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.20"
+                android:gravity="center" >
+
+                <CheckBox
+                    android:id="@+id/checkFrndForRecommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:button="@layout/custom_check_box"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:paddingLeft="55dp" />
+            </LinearLayout>
+                -->
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
